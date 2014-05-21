@@ -22,6 +22,21 @@
 		C0A1E961192D6E4E00B4384D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E945192D6E4D00B4384D /* CoreData.framework */; };
 		C0A1E969192D6E4E00B4384D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E967192D6E4E00B4384D /* InfoPlist.strings */; };
 		C0A1E96B192D6E4E00B4384D /* Number_GuessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A1E96A192D6E4E00B4384D /* Number_GuessTests.m */; };
+		C0A1E97C192D6E9100B4384D /* canvas_view@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E975192D6E9100B4384D /* canvas_view@2x.png */; };
+		C0A1E97D192D6E9100B4384D /* game_view@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E976192D6E9100B4384D /* game_view@2x.png */; };
+		C0A1E97E192D6E9100B4384D /* sign_cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E977192D6E9100B4384D /* sign_cross@2x.png */; };
+		C0A1E97F192D6E9100B4384D /* sign_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E978192D6E9100B4384D /* sign_left@2x.png */; };
+		C0A1E980192D6E9100B4384D /* sign_question@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E979192D6E9100B4384D /* sign_question@2x.png */; };
+		C0A1E981192D6E9100B4384D /* sign_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E97A192D6E9100B4384D /* sign_right@2x.png */; };
+		C0A1E982192D6E9100B4384D /* sign_tick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E97B192D6E9100B4384D /* sign_tick@2x.png */; };
+		C0A1E98A192D6EA300B4384D /* canvas_view.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E983192D6EA300B4384D /* canvas_view.png */; };
+		C0A1E98B192D6EA300B4384D /* game_view.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E984192D6EA300B4384D /* game_view.png */; };
+		C0A1E98C192D6EA300B4384D /* sign_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E985192D6EA300B4384D /* sign_cross.png */; };
+		C0A1E98D192D6EA300B4384D /* sign_left.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E986192D6EA300B4384D /* sign_left.png */; };
+		C0A1E98E192D6EA300B4384D /* sign_question.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E987192D6EA300B4384D /* sign_question.png */; };
+		C0A1E98F192D6EA300B4384D /* sign_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E988192D6EA300B4384D /* sign_right.png */; };
+		C0A1E990192D6EA300B4384D /* sign_tick.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E989192D6EA300B4384D /* sign_tick.png */; };
+		C0A1E992192D6EBA00B4384D /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E991192D6EBA00B4384D /* Game.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +68,21 @@
 		C0A1E966192D6E4E00B4384D /* Number GuessTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Number GuessTests-Info.plist"; sourceTree = "<group>"; };
 		C0A1E968192D6E4E00B4384D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0A1E96A192D6E4E00B4384D /* Number_GuessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Number_GuessTests.m; sourceTree = "<group>"; };
+		C0A1E975192D6E9100B4384D /* canvas_view@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "canvas_view@2x.png"; sourceTree = "<group>"; };
+		C0A1E976192D6E9100B4384D /* game_view@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game_view@2x.png"; sourceTree = "<group>"; };
+		C0A1E977192D6E9100B4384D /* sign_cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_cross@2x.png"; sourceTree = "<group>"; };
+		C0A1E978192D6E9100B4384D /* sign_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_left@2x.png"; sourceTree = "<group>"; };
+		C0A1E979192D6E9100B4384D /* sign_question@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_question@2x.png"; sourceTree = "<group>"; };
+		C0A1E97A192D6E9100B4384D /* sign_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_right@2x.png"; sourceTree = "<group>"; };
+		C0A1E97B192D6E9100B4384D /* sign_tick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_tick@2x.png"; sourceTree = "<group>"; };
+		C0A1E983192D6EA300B4384D /* canvas_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canvas_view.png; sourceTree = "<group>"; };
+		C0A1E984192D6EA300B4384D /* game_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_view.png; sourceTree = "<group>"; };
+		C0A1E985192D6EA300B4384D /* sign_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_cross.png; sourceTree = "<group>"; };
+		C0A1E986192D6EA300B4384D /* sign_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_left.png; sourceTree = "<group>"; };
+		C0A1E987192D6EA300B4384D /* sign_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_question.png; sourceTree = "<group>"; };
+		C0A1E988192D6EA300B4384D /* sign_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_right.png; sourceTree = "<group>"; };
+		C0A1E989192D6EA300B4384D /* sign_tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_tick.png; sourceTree = "<group>"; };
+		C0A1E991192D6EBA00B4384D /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +149,9 @@
 				C0A1E951192D6E4D00B4384D /* ASAppDelegate.m */,
 				C0A1E956192D6E4E00B4384D /* Images.xcassets */,
 				C0A1E953192D6E4E00B4384D /* Number_Guess.xcdatamodeld */,
+				C0A1E974192D6E6B00B4384D /* Images */,
 				C0A1E948192D6E4D00B4384D /* Supporting Files */,
+				C0A1E991192D6EBA00B4384D /* Game.storyboard */,
 			);
 			path = "Number Guess";
 			sourceTree = "<group>";
@@ -151,6 +183,27 @@
 				C0A1E967192D6E4E00B4384D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0A1E974192D6E6B00B4384D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C0A1E983192D6EA300B4384D /* canvas_view.png */,
+				C0A1E984192D6EA300B4384D /* game_view.png */,
+				C0A1E985192D6EA300B4384D /* sign_cross.png */,
+				C0A1E986192D6EA300B4384D /* sign_left.png */,
+				C0A1E987192D6EA300B4384D /* sign_question.png */,
+				C0A1E988192D6EA300B4384D /* sign_right.png */,
+				C0A1E989192D6EA300B4384D /* sign_tick.png */,
+				C0A1E975192D6E9100B4384D /* canvas_view@2x.png */,
+				C0A1E976192D6E9100B4384D /* game_view@2x.png */,
+				C0A1E977192D6E9100B4384D /* sign_cross@2x.png */,
+				C0A1E978192D6E9100B4384D /* sign_left@2x.png */,
+				C0A1E979192D6E9100B4384D /* sign_question@2x.png */,
+				C0A1E97A192D6E9100B4384D /* sign_right@2x.png */,
+				C0A1E97B192D6E9100B4384D /* sign_tick@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +282,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A1E97F192D6E9100B4384D /* sign_left@2x.png in Resources */,
 				C0A1E94C192D6E4D00B4384D /* InfoPlist.strings in Resources */,
+				C0A1E97E192D6E9100B4384D /* sign_cross@2x.png in Resources */,
+				C0A1E982192D6E9100B4384D /* sign_tick@2x.png in Resources */,
+				C0A1E97D192D6E9100B4384D /* game_view@2x.png in Resources */,
+				C0A1E981192D6E9100B4384D /* sign_right@2x.png in Resources */,
+				C0A1E98E192D6EA300B4384D /* sign_question.png in Resources */,
+				C0A1E98A192D6EA300B4384D /* canvas_view.png in Resources */,
+				C0A1E98F192D6EA300B4384D /* sign_right.png in Resources */,
+				C0A1E98D192D6EA300B4384D /* sign_left.png in Resources */,
+				C0A1E98C192D6EA300B4384D /* sign_cross.png in Resources */,
+				C0A1E992192D6EBA00B4384D /* Game.storyboard in Resources */,
+				C0A1E990192D6EA300B4384D /* sign_tick.png in Resources */,
+				C0A1E97C192D6E9100B4384D /* canvas_view@2x.png in Resources */,
+				C0A1E980192D6E9100B4384D /* sign_question@2x.png in Resources */,
 				C0A1E957192D6E4E00B4384D /* Images.xcassets in Resources */,
+				C0A1E98B192D6EA300B4384D /* game_view.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +439,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Number Guess/Number Guess-Prefix.pch";
 				INFOPLIST_FILE = "Number Guess/Number Guess-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -384,6 +453,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Number Guess/Number Guess-Prefix.pch";
 				INFOPLIST_FILE = "Number Guess/Number Guess-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
