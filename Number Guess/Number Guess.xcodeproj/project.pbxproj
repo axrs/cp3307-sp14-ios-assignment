@@ -37,6 +37,7 @@
 		C0A1E98F192D6EA300B4384D /* sign_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E988192D6EA300B4384D /* sign_right.png */; };
 		C0A1E990192D6EA300B4384D /* sign_tick.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E989192D6EA300B4384D /* sign_tick.png */; };
 		C0A1E992192D6EBA00B4384D /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E991192D6EBA00B4384D /* Game.storyboard */; };
+		C0A1E996192D836400B4384D /* ASCardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A1E995192D836400B4384D /* ASCardTest.m */; };
 		D24FF1F1AE0839B8FB95DDDB /* ASCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF648D84D1A29BDC840CE /* ASCard.m */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		C0A1E988192D6EA300B4384D /* sign_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_right.png; sourceTree = "<group>"; };
 		C0A1E989192D6EA300B4384D /* sign_tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_tick.png; sourceTree = "<group>"; };
 		C0A1E991192D6EBA00B4384D /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		C0A1E995192D836400B4384D /* ASCardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCardTest.m; sourceTree = "<group>"; };
 		D24FF648D84D1A29BDC840CE /* ASCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCard.m; sourceTree = "<group>"; };
 		D24FFD8EE73566971D7A947E /* ASCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCard.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 		C0A1E964192D6E4E00B4384D /* Number GuessTests */ = {
 			isa = PBXGroup;
 			children = (
+				C0A1E994192D82FF00B4384D /* core */,
 				C0A1E96A192D6E4E00B4384D /* Number_GuessTests.m */,
 				C0A1E965192D6E4E00B4384D /* Supporting Files */,
 			);
@@ -215,6 +218,14 @@
 			children = (
 				D24FF648D84D1A29BDC840CE /* ASCard.m */,
 				D24FFD8EE73566971D7A947E /* ASCard.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		C0A1E994192D82FF00B4384D /* core */ = {
+			isa = PBXGroup;
+			children = (
+				C0A1E995192D836400B4384D /* ASCardTest.m */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -342,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A1E96B192D6E4E00B4384D /* Number_GuessTests.m in Sources */,
+				C0A1E996192D836400B4384D /* ASCardTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +544,7 @@
 				C0A1E970192D6E4E00B4384D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0A1E971192D6E4E00B4384D /* Build configuration list for PBXNativeTarget "Number GuessTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +553,7 @@
 				C0A1E973192D6E4E00B4384D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
