@@ -37,6 +37,7 @@
 		C0A1E98F192D6EA300B4384D /* sign_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E988192D6EA300B4384D /* sign_right.png */; };
 		C0A1E990192D6EA300B4384D /* sign_tick.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E989192D6EA300B4384D /* sign_tick.png */; };
 		C0A1E992192D6EBA00B4384D /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E991192D6EBA00B4384D /* Game.storyboard */; };
+		D24FF1F1AE0839B8FB95DDDB /* ASCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF648D84D1A29BDC840CE /* ASCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		C0A1E988192D6EA300B4384D /* sign_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_right.png; sourceTree = "<group>"; };
 		C0A1E989192D6EA300B4384D /* sign_tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_tick.png; sourceTree = "<group>"; };
 		C0A1E991192D6EBA00B4384D /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		D24FF648D84D1A29BDC840CE /* ASCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCard.m; sourceTree = "<group>"; };
+		D24FFD8EE73566971D7A947E /* ASCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCard.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,7 @@
 		C0A1E947192D6E4D00B4384D /* Number Guess */ = {
 			isa = PBXGroup;
 			children = (
+				C0A1E993192D71A800B4384D /* core */,
 				C0A1E950192D6E4D00B4384D /* ASAppDelegate.h */,
 				C0A1E951192D6E4D00B4384D /* ASAppDelegate.m */,
 				C0A1E956192D6E4E00B4384D /* Images.xcassets */,
@@ -204,6 +208,15 @@
 				C0A1E97B192D6E9100B4384D /* sign_tick@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		C0A1E993192D71A800B4384D /* core */ = {
+			isa = PBXGroup;
+			children = (
+				D24FF648D84D1A29BDC840CE /* ASCard.m */,
+				D24FFD8EE73566971D7A947E /* ASCard.h */,
+			);
+			name = core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +333,7 @@
 				C0A1E955192D6E4E00B4384D /* Number_Guess.xcdatamodeld in Sources */,
 				C0A1E952192D6E4D00B4384D /* ASAppDelegate.m in Sources */,
 				C0A1E94E192D6E4D00B4384D /* main.m in Sources */,
+				D24FF1F1AE0839B8FB95DDDB /* ASCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
