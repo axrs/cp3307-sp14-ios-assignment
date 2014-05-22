@@ -13,7 +13,7 @@
     int _secret;
 }
 
-- (void)setupForRangeFrom:(int)minimumValue to:(int)maximumValue {
+- (void)setupForRangeFrom:(int)minimumValue To:(int)maximumValue {
     _minimumValue = minimumValue;
     _maximumValue = maximumValue;
     [self reset];

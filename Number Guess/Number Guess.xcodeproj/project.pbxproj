@@ -90,6 +90,7 @@
 		C0A1E991192D6EBA00B4384D /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		C0A1E995192D836400B4384D /* ASCardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCardTest.m; sourceTree = "<group>"; };
 		D24FF1792541532F9118E6E5 /* ASBinaryGameKeyGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryGameKeyGenerator.m; sourceTree = "<group>"; };
+		D24FF5DD64189A99D5330541 /* ASGameScoreTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameScoreTracker.h; sourceTree = "<group>"; };
 		D24FF648D84D1A29BDC840CE /* ASCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCard.m; sourceTree = "<group>"; };
 		D24FF64FEE2F9762A3EA6E70 /* ASStandardGameMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStandardGameMode.m; sourceTree = "<group>"; };
 		D24FF767D1BD30688F6EAEC9 /* ASGameKeyGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameKeyGenerator.h; sourceTree = "<group>"; };
@@ -234,6 +235,7 @@
 				D24FFA5B2637E560FB5FC4E9 /* ASGameMode.h */,
 				D24FF64FEE2F9762A3EA6E70 /* ASStandardGameMode.m */,
 				D24FFEF69A3784BF4E4F0816 /* ASStandardGameMode.h */,
+				D24FF5DD64189A99D5330541 /* ASGameScoreTracker.h */,
 			);
 			name = core;
 			sourceTree = "<group>";

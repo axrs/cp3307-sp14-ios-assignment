@@ -26,7 +26,7 @@ Defines the skeletal structure for implementing a new game mode for use with the
 @param maximumValue Highest value in range
 
 */
-- (void)setupForRangeFrom:(int)minimumValue to:(int)maximumValue;
+- (void)setupForRangeFrom:(int)minimumValue To:(int)maximumValue;
 
 /**---------------------------------------------------------------------------------------
 * @name reset
