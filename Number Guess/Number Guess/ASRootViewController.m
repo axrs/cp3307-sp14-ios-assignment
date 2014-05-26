@@ -10,6 +10,7 @@
 
 }
 - (IBAction)unwindToRoot:(UIStoryboardSegue *)sender {
+    //Kill all other view controllers to get here
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
