@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Difficulty View Controller-->
         <scene sceneID="Dn0-cP-17o">
             <objects>
-                <viewController id="Bd8-ym-Kvd" sceneMemberID="viewController">
+                <viewController id="Bd8-ym-Kvd" customClass="ASDifficultyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jjO-pI-mWA"/>
                         <viewControllerLayoutGuide type="bottom" id="REO-Bh-piX"/>
@@ -24,7 +24,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hqu-0X-ANR" kind="custom" customClass="ASSlideSegue" id="cMS-wC-8cw"/>
+                                    <segue destination="hqu-0X-ANR" kind="push" customClass="ASSlideSegue" id="cMS-wC-8cw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHN-90-3FH">
@@ -35,7 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hqu-0X-ANR" kind="custom" customClass="ASSlideSegue" id="k7d-Ub-lF5"/>
+                                    <segue destination="hqu-0X-ANR" kind="push" customClass="ASSlideSegue" id="k7d-Ub-lF5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phg-j6-Oxp">
@@ -46,7 +46,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hqu-0X-ANR" kind="custom" customClass="ASSlideSegue" id="ZDV-3b-bI5"/>
+                                    <segue destination="hqu-0X-ANR" kind="push" customClass="ASSlideSegue" id="ZDV-3b-bI5"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yqi-1c-xTj">
@@ -61,17 +61,31 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="canvas_view.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vyf-Bg-Wft">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corkboard_280_50.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vyf-Bg-Wft">
                                 <rect key="frame" x="20" y="20" width="280" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toi-nz-axn">
-                                <rect key="frame" x="40" y="34" width="240" height="21"/>
+                                <rect key="frame" x="88" y="34" width="192" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APt-QZ-EzN">
+                                <rect key="frame" x="30" y="30" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="z9f-8z-Mym" kind="unwind" unwindAction="unwindToRoot:" id="J2A-3H-gSe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -81,6 +95,7 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GA6-gh-aAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="z9f-8z-Mym" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="860" y="53"/>
         </scene>
@@ -155,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="1259" y="53"/>
         </scene>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="Zao-s2-ZAT">
             <objects>
-                <viewController id="B5Z-tz-gKh" sceneMemberID="viewController">
+                <viewController id="B5Z-tz-gKh" customClass="ASRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BEi-Ht-oKf"/>
                         <viewControllerLayoutGuide type="bottom" id="ZqJ-Hs-Bww"/>
@@ -175,7 +190,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bd8-ym-Kvd" kind="custom" customClass="ASSlideSegue" id="Wsm-Jy-XA5"/>
+                                    <segue destination="Bd8-ym-Kvd" kind="push" customClass="ASSlideSegue" id="Wsm-Jy-XA5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtb-fU-Lt6">
@@ -223,6 +238,7 @@
     </scenes>
     <resources>
         <image name="canvas_view.png" width="288" height="288"/>
+        <image name="corkboard_280_50.png" width="560" height="100"/>
         <image name="game_view.png" width="320" height="568"/>
         <image name="sign_cross.png" width="64" height="64"/>
         <image name="sign_left.png" width="64" height="64"/>
@@ -235,6 +251,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ZDV-3b-bI5"/>
+        <segue reference="cMS-wC-8cw"/>
     </inferredMetricsTieBreakers>
 </document>
