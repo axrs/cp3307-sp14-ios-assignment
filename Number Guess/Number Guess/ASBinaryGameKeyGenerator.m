@@ -30,6 +30,11 @@
     }
 }
 
+- (void)setupRangeFrom:(int)minimumValue To:(int)maximumValue {
+    [self setMaximumValue:maximumValue];
+}
+
+
 - (NSMutableArray *)generateKeys {
 
     int runningSum = 0;

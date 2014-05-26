@@ -13,7 +13,6 @@
     int _secret;
 }
 
-
 - (void)setupForRangeFrom:(int)minimumValue To:(int)maximumValue {
     _minimumValue = minimumValue;
     _maximumValue = maximumValue;
@@ -23,6 +22,11 @@
 - (void)reset {
     _secret = arc4random() % (_maximumValue - _minimumValue) + _minimumValue;
 }
+
+- (int)secret {
+    return _secret;
+}
+
 
 - (BOOL)valueIsSecret:(int)value {
     return (_secret == value);
@@ -49,7 +53,7 @@
 }
 
 - (BOOL)showHintForCard:(ASCard *)card {
-    return [self isSecretOnCard:card];
+    return [self showHints] && [self isSecretOnCard:card];
 }
 
 @end
