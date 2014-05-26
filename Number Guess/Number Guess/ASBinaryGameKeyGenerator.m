@@ -5,21 +5,12 @@
 
 #import "ASBinaryGameKeyGenerator.h"
 
-/** Binary Key Generation Strategy
 
-Key generation strategy for a finite sequence of positive integers for the binary number sequence.
-
-*/
 @implementation ASBinaryGameKeyGenerator {
 @private
     int _maximumValue;
 }
 
-
-/** Initialises the generator with a maximum required value to generate
-
-@param maximumValue Highest value required to generate
-*/
 - (id)initWithMaximumValue:(int)maximumValue {
     self = [super init];
     if (self) {
@@ -29,26 +20,16 @@ Key generation strategy for a finite sequence of positive integers for the binar
     return self;
 }
 
-/** Gets the current maximum generation value
-*/
 - (int)maximumValue {
     return _maximumValue;
 }
 
-/** Sets the maximum required generation value
-
-@param maximumValue Highest value required to generate
-*/
 - (void)setMaximumValue:(int)maximumValue {
     if (maximumValue > 0) {
         _maximumValue = maximumValue;
     }
 }
 
-/** Generates the finite sequence of positive integers
-
-@return array sequence of binary value
-*/
 - (NSMutableArray *)generateKeys {
 
     int runningSum = 0;

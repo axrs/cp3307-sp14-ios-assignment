@@ -7,7 +7,11 @@
 
 #import "ASGameKeyGenerator.h"
 
+/** Binary Key Generation Strategy
+
+Key generation strategy for a finite sequence of positive integers for the binary number sequence.
+
+*/
 @interface ASBinaryGameKeyGenerator : NSObject <ASGameKeyGenerator>
-- (instancetype)initWithMaximumValue:(int)maximumValue;
 
 @end
