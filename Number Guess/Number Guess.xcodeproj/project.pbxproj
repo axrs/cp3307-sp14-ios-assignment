@@ -39,12 +39,19 @@
 		C0A1E992192D6EBA00B4384D /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E991192D6EBA00B4384D /* Game.storyboard */; };
 		C0A1E996192D836400B4384D /* ASCardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A1E995192D836400B4384D /* ASCardTest.m */; };
 		D24FF1F1AE0839B8FB95DDDB /* ASCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF648D84D1A29BDC840CE /* ASCard.m */; };
+		D24FF253861D687C31E454DF /* ASEasyGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFA63D9D18EECEE65841E /* ASEasyGameDifficultyCommand.m */; };
 		D24FF28539B09868DB012483 /* ASStandardGameMode.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF64FEE2F9762A3EA6E70 /* ASStandardGameMode.m */; };
+		D24FF2E3C653D7BA04DC387B /* ASSingleGameCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF484CEC2E5116F750A0E /* ASSingleGameCore.m */; };
 		D24FF412A314627A405ACE47 /* ASBinaryGameKeyGeneratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFC00B986F60ED18ECFE4 /* ASBinaryGameKeyGeneratorTest.m */; };
 		D24FF4AE9683B70B11D39118 /* ASStandardGameModeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF496E6D0F93433933EED /* ASStandardGameModeTest.m */; };
+		D24FF5304D9B5254CF512ECF /* ASGameCoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF573F97F87F7BB129BA8 /* ASGameCoreTest.m */; };
 		D24FF65374F8B49D146BCFD9 /* ASBasicScoreTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF1F66FCFA64260B320C6 /* ASBasicScoreTracker.m */; };
+		D24FF77CD53F9C9FBC96B7B6 /* ASHardGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF622CE0D43C9F01D3088 /* ASHardGameDifficultyCommand.m */; };
 		D24FFA454AC1079D6BA2568E /* ASBasicScoreTrackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */; };
 		D24FFAC504DB90FA69990695 /* ASGameCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFDE52222FBC0B1D791C8 /* ASGameCore.m */; };
+		D24FFAFDBA89206BC2F75C77 /* ASBinaryGameSequenceCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF303B88E450E3F64FA8A /* ASBinaryGameSequenceCommand.m */; };
+		D24FFBCEC70CC79A706478DE /* ASCustomGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF63D70DE4B94E22B73A0 /* ASCustomGameDifficultyCommand.m */; };
+		D24FFE6BD8D6E4212CCCDA1C /* ASMediumGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF203DDEB5AAA6A208847 /* ASMediumGameDifficultyCommand.m */; };
 		D24FFFBCFA13A793D58FE473 /* ASBinaryGameKeyGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF1792541532F9118E6E5 /* ASBinaryGameKeyGenerator.m */; };
 /* End PBXBuildFile section */
 
@@ -94,22 +101,36 @@
 		C0A1E991192D6EBA00B4384D /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		C0A1E995192D836400B4384D /* ASCardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCardTest.m; sourceTree = "<group>"; };
 		D24FF05B42845EC5FC4E83FB /* ASGameCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameCore.h; sourceTree = "<group>"; };
+		D24FF105C9DCE217A1B14CD5 /* ASMediumGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMediumGameDifficultyCommand.h; sourceTree = "<group>"; };
 		D24FF1792541532F9118E6E5 /* ASBinaryGameKeyGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryGameKeyGenerator.m; sourceTree = "<group>"; };
 		D24FF1F66FCFA64260B320C6 /* ASBasicScoreTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBasicScoreTracker.m; sourceTree = "<group>"; };
+		D24FF203DDEB5AAA6A208847 /* ASMediumGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMediumGameDifficultyCommand.m; sourceTree = "<group>"; };
+		D24FF2B705A6D1EBFA1F61FE /* ASCustomGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCustomGameDifficultyCommand.h; sourceTree = "<group>"; };
+		D24FF303B88E450E3F64FA8A /* ASBinaryGameSequenceCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryGameSequenceCommand.m; sourceTree = "<group>"; };
+		D24FF484CEC2E5116F750A0E /* ASSingleGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSingleGameCore.m; sourceTree = "<group>"; };
+		D24FF48F4DDC7BB722CB33BB /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 		D24FF496E6D0F93433933EED /* ASStandardGameModeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStandardGameModeTest.m; sourceTree = "<group>"; };
+		D24FF573F97F87F7BB129BA8 /* ASGameCoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGameCoreTest.m; sourceTree = "<group>"; };
 		D24FF5DD64189A99D5330541 /* ASGameScoreTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameScoreTracker.h; sourceTree = "<group>"; };
+		D24FF622CE0D43C9F01D3088 /* ASHardGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHardGameDifficultyCommand.m; sourceTree = "<group>"; };
+		D24FF63D70DE4B94E22B73A0 /* ASCustomGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCustomGameDifficultyCommand.m; sourceTree = "<group>"; };
 		D24FF648D84D1A29BDC840CE /* ASCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCard.m; sourceTree = "<group>"; };
 		D24FF64FEE2F9762A3EA6E70 /* ASStandardGameMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStandardGameMode.m; sourceTree = "<group>"; };
 		D24FF767D1BD30688F6EAEC9 /* ASGameKeyGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameKeyGenerator.h; sourceTree = "<group>"; };
+		D24FF7EEB299836AD567B51E /* ASEasyGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEasyGameDifficultyCommand.h; sourceTree = "<group>"; };
 		D24FF8B98D890D4454017525 /* ASBinaryGameKeyGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBinaryGameKeyGenerator.h; sourceTree = "<group>"; };
 		D24FFA5B2637E560FB5FC4E9 /* ASGameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameMode.h; sourceTree = "<group>"; };
+		D24FFA63D9D18EECEE65841E /* ASEasyGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEasyGameDifficultyCommand.m; sourceTree = "<group>"; };
 		D24FFBBE99999C74B3778E8C /* ASGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGame.h; sourceTree = "<group>"; };
 		D24FFC00B986F60ED18ECFE4 /* ASBinaryGameKeyGeneratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryGameKeyGeneratorTest.m; sourceTree = "<group>"; };
 		D24FFC5E0E7F86250B724112 /* ASBasicScoreTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBasicScoreTracker.h; sourceTree = "<group>"; };
+		D24FFC9D971C80BAB248182F /* ASBinaryGameSequenceCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBinaryGameSequenceCommand.h; sourceTree = "<group>"; };
+		D24FFCC3FB49BEE244CAC943 /* ASSingleGameCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSingleGameCore.h; sourceTree = "<group>"; };
 		D24FFD8EE73566971D7A947E /* ASCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCard.h; sourceTree = "<group>"; };
 		D24FFDE52222FBC0B1D791C8 /* ASGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGameCore.m; sourceTree = "<group>"; };
 		D24FFEF69A3784BF4E4F0816 /* ASStandardGameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStandardGameMode.h; sourceTree = "<group>"; };
 		D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBasicScoreTrackerTest.m; sourceTree = "<group>"; };
+		D24FFFC6368DBED22F65EE59 /* ASHardGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHardGameDifficultyCommand.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +201,8 @@
 				C0A1E974192D6E6B00B4384D /* Images */,
 				C0A1E948192D6E4D00B4384D /* Supporting Files */,
 				C0A1E991192D6EBA00B4384D /* Game.storyboard */,
+				D24FF150E2701E462B0725FE /* commands */,
+				D24FF48F4DDC7BB722CB33BB /* Command.h */,
 			);
 			path = "Number Guess";
 			sourceTree = "<group>";
@@ -252,6 +275,8 @@
 				D24FFBBE99999C74B3778E8C /* ASGame.h */,
 				D24FFDE52222FBC0B1D791C8 /* ASGameCore.m */,
 				D24FF05B42845EC5FC4E83FB /* ASGameCore.h */,
+				D24FF484CEC2E5116F750A0E /* ASSingleGameCore.m */,
+				D24FFCC3FB49BEE244CAC943 /* ASSingleGameCore.h */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -263,8 +288,26 @@
 				D24FFC00B986F60ED18ECFE4 /* ASBinaryGameKeyGeneratorTest.m */,
 				D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */,
 				D24FF496E6D0F93433933EED /* ASStandardGameModeTest.m */,
+				D24FF573F97F87F7BB129BA8 /* ASGameCoreTest.m */,
 			);
 			name = core;
+			sourceTree = "<group>";
+		};
+		D24FF150E2701E462B0725FE /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				D24FF303B88E450E3F64FA8A /* ASBinaryGameSequenceCommand.m */,
+				D24FFC9D971C80BAB248182F /* ASBinaryGameSequenceCommand.h */,
+				D24FFA63D9D18EECEE65841E /* ASEasyGameDifficultyCommand.m */,
+				D24FF7EEB299836AD567B51E /* ASEasyGameDifficultyCommand.h */,
+				D24FF203DDEB5AAA6A208847 /* ASMediumGameDifficultyCommand.m */,
+				D24FF105C9DCE217A1B14CD5 /* ASMediumGameDifficultyCommand.h */,
+				D24FF622CE0D43C9F01D3088 /* ASHardGameDifficultyCommand.m */,
+				D24FFFC6368DBED22F65EE59 /* ASHardGameDifficultyCommand.h */,
+				D24FF63D70DE4B94E22B73A0 /* ASCustomGameDifficultyCommand.m */,
+				D24FF2B705A6D1EBFA1F61FE /* ASCustomGameDifficultyCommand.h */,
+			);
+			path = commands;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +429,12 @@
 				D24FF28539B09868DB012483 /* ASStandardGameMode.m in Sources */,
 				D24FF65374F8B49D146BCFD9 /* ASBasicScoreTracker.m in Sources */,
 				D24FFAC504DB90FA69990695 /* ASGameCore.m in Sources */,
+				D24FF2E3C653D7BA04DC387B /* ASSingleGameCore.m in Sources */,
+				D24FFAFDBA89206BC2F75C77 /* ASBinaryGameSequenceCommand.m in Sources */,
+				D24FF253861D687C31E454DF /* ASEasyGameDifficultyCommand.m in Sources */,
+				D24FFE6BD8D6E4212CCCDA1C /* ASMediumGameDifficultyCommand.m in Sources */,
+				D24FF77CD53F9C9FBC96B7B6 /* ASHardGameDifficultyCommand.m in Sources */,
+				D24FFBCEC70CC79A706478DE /* ASCustomGameDifficultyCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +447,7 @@
 				D24FF412A314627A405ACE47 /* ASBinaryGameKeyGeneratorTest.m in Sources */,
 				D24FFA454AC1079D6BA2568E /* ASBasicScoreTrackerTest.m in Sources */,
 				D24FF4AE9683B70B11D39118 /* ASStandardGameModeTest.m in Sources */,
+				D24FF5304D9B5254CF512ECF /* ASGameCoreTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

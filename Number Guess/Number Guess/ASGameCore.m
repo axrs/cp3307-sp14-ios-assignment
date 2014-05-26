@@ -18,7 +18,6 @@
     NSMutableArray *_cards;
 }
 
-
 - (id)initWithRangeFrom:(int)minimumValue To:(int)maximumValue {
     self = [super init];
 
@@ -130,7 +129,7 @@
 
         valueToFind = i;
 
-        for (int j = [_keys count] - 1; j >= 0; j--) {
+        for (int j = [[self keys] count] - 1; j >= 0; j--) {
             currentKey = [[[self keys] objectAtIndex:j] intValue];
 
             if (valueToFind >= currentKey) {
