@@ -15,6 +15,8 @@ Defines the skeletal structure for implementing a new game mode for use with the
 @protocol ASGameMode <NSObject>
 
 
+
+
 /**---------------------------------------------------------------------------------------
 * @name setupForRangeFromTo
 *  ---------------------------------------------------------------------------------------

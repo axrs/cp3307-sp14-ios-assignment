@@ -13,6 +13,10 @@ Used to implement various methods of game score tracking
 */
 @protocol ASGameScoreTracker <NSObject>
 
+/** Game Score (Calculated at end of Game);
+*/
+@property(readonly) long score;
+
 
 /**---------------------------------------------------------------------------------------
 * @name setupForRangeFromTo
@@ -47,4 +51,16 @@ Used to implement various methods of game score tracking
 
 */
 - (void)reset;
+
+
+/**---------------------------------------------------------------------------------------
+* @name isTracked
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Checks to see if score tracking is being used by the implementation
+
+@return YES if tracking enabled
+*/
+- (BOOL)isTracked;
 @end
