@@ -28,6 +28,8 @@
     long timeEnd = (long) now * 1000;
 
     long gameDuration = timeEnd - _timeStart;
+    //Ensure a minimum game duration of 1 millisecond
+    gameDuration = (gameDuration) ? gameDuration : 1;
 
     _score = _range / gameDuration;
 }

@@ -42,6 +42,7 @@
 		D24FF28539B09868DB012483 /* ASStandardGameMode.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF64FEE2F9762A3EA6E70 /* ASStandardGameMode.m */; };
 		D24FF412A314627A405ACE47 /* ASBinaryGameKeyGeneratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFC00B986F60ED18ECFE4 /* ASBinaryGameKeyGeneratorTest.m */; };
 		D24FF65374F8B49D146BCFD9 /* ASBasicScoreTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF1F66FCFA64260B320C6 /* ASBasicScoreTracker.m */; };
+		D24FFA454AC1079D6BA2568E /* ASBasicScoreTrackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */; };
 		D24FFFBCFA13A793D58FE473 /* ASBinaryGameKeyGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF1792541532F9118E6E5 /* ASBinaryGameKeyGenerator.m */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		D24FFC5E0E7F86250B724112 /* ASBasicScoreTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBasicScoreTracker.h; sourceTree = "<group>"; };
 		D24FFD8EE73566971D7A947E /* ASCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCard.h; sourceTree = "<group>"; };
 		D24FFEF69A3784BF4E4F0816 /* ASStandardGameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStandardGameMode.h; sourceTree = "<group>"; };
+		D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBasicScoreTrackerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 			children = (
 				C0A1E995192D836400B4384D /* ASCardTest.m */,
 				D24FFC00B986F60ED18ECFE4 /* ASBinaryGameKeyGeneratorTest.m */,
+				D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				C0A1E96B192D6E4E00B4384D /* Number_GuessTests.m in Sources */,
 				C0A1E996192D836400B4384D /* ASCardTest.m in Sources */,
 				D24FF412A314627A405ACE47 /* ASBinaryGameKeyGeneratorTest.m in Sources */,
+				D24FFA454AC1079D6BA2568E /* ASBasicScoreTrackerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
