@@ -1,5 +1,5 @@
 //
-//  ASDifficultyViewController.h
+//  ASGameViewController.h
 //  Number Guess
 //
 //  Created by Alexander Scott on 26/05/2014.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASDifficultyViewController : UIViewController
+@interface ASGameViewController : UIViewController
 
-- (IBAction)unwindToDifficultySelection:(UIStoryboardSegue *)sender;
+- (IBAction)dismissView;
 
+- (IBAction)dismissToRoot;
 @end

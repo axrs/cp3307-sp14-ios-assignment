@@ -19,6 +19,11 @@
 		C09F3B0C19330F5A009BBE1C /* arrow_left_invert.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3B0919330F5A009BBE1C /* arrow_left_invert.png */; };
 		C09F3B0D19330F5A009BBE1C /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3B0A19330F5A009BBE1C /* arrow_left.png */; };
 		C09F3B0E19330F5A009BBE1C /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3B0B19330F5A009BBE1C /* arrow_right.png */; };
+		C09F3B11193310B2009BBE1C /* buttonboard_280_48_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3B0F193310B2009BBE1C /* buttonboard_280_48_right.png */; };
+		C09F3B12193310B2009BBE1C /* buttonboard_280_48.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3B10193310B2009BBE1C /* buttonboard_280_48.png */; };
+		C09F3B15193310BE009BBE1C /* buttonboard_280_48_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3B13193310BE009BBE1C /* buttonboard_280_48_right@2x.png */; };
+		C09F3B16193310BE009BBE1C /* buttonboard_280_48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3B14193310BE009BBE1C /* buttonboard_280_48@2x.png */; };
+		C09F3B19193312CE009BBE1C /* ASGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F3B18193312CE009BBE1C /* ASGameViewController.m */; };
 		C0A1E940192D6E4D00B4384D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E93F192D6E4D00B4384D /* Foundation.framework */; };
 		C0A1E942192D6E4D00B4384D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E941192D6E4D00B4384D /* CoreGraphics.framework */; };
 		C0A1E944192D6E4D00B4384D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E943192D6E4D00B4384D /* UIKit.framework */; };
@@ -63,7 +68,6 @@
 		D24FFA454AC1079D6BA2568E /* ASBasicScoreTrackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */; };
 		D24FFAC504DB90FA69990695 /* ASGameCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFDE52222FBC0B1D791C8 /* ASGameCore.m */; };
 		D24FFAFDBA89206BC2F75C77 /* ASBinaryGameSequenceCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF303B88E450E3F64FA8A /* ASBinaryGameSequenceCommand.m */; };
-		D24FFB16597132740230EEA5 /* ASCorkboardImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF317BDEA76D7FA69571B /* ASCorkboardImageView.m */; };
 		D24FFBCEC70CC79A706478DE /* ASCustomGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF63D70DE4B94E22B73A0 /* ASCustomGameDifficultyCommand.m */; };
 		D24FFBD1314247F9108E55C3 /* ASSlideSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFE3B55B599789D2D91C6 /* ASSlideSegue.m */; };
 		D24FFE6BD8D6E4212CCCDA1C /* ASMediumGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF203DDEB5AAA6A208847 /* ASMediumGameDifficultyCommand.m */; };
@@ -94,6 +98,12 @@
 		C09F3B0919330F5A009BBE1C /* arrow_left_invert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_left_invert.png; path = ../arrow_left_invert.png; sourceTree = "<group>"; };
 		C09F3B0A19330F5A009BBE1C /* arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_left.png; path = ../arrow_left.png; sourceTree = "<group>"; };
 		C09F3B0B19330F5A009BBE1C /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_right.png; path = ../arrow_right.png; sourceTree = "<group>"; };
+		C09F3B0F193310B2009BBE1C /* buttonboard_280_48_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonboard_280_48_right.png; path = ../buttonboard_280_48_right.png; sourceTree = "<group>"; };
+		C09F3B10193310B2009BBE1C /* buttonboard_280_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonboard_280_48.png; path = ../buttonboard_280_48.png; sourceTree = "<group>"; };
+		C09F3B13193310BE009BBE1C /* buttonboard_280_48_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonboard_280_48_right@2x.png"; path = "../buttonboard_280_48_right@2x.png"; sourceTree = "<group>"; };
+		C09F3B14193310BE009BBE1C /* buttonboard_280_48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonboard_280_48@2x.png"; path = "../buttonboard_280_48@2x.png"; sourceTree = "<group>"; };
+		C09F3B17193312CE009BBE1C /* ASGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameViewController.h; sourceTree = "<group>"; };
+		C09F3B18193312CE009BBE1C /* ASGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGameViewController.m; sourceTree = "<group>"; };
 		C0A1E93C192D6E4D00B4384D /* Number Guess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Guess.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A1E93F192D6E4D00B4384D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0A1E941192D6E4D00B4384D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,7 +146,6 @@
 		D24FF21F3190031CD7090971 /* ASRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRootViewController.h; sourceTree = "<group>"; };
 		D24FF2B705A6D1EBFA1F61FE /* ASCustomGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCustomGameDifficultyCommand.h; sourceTree = "<group>"; };
 		D24FF303B88E450E3F64FA8A /* ASBinaryGameSequenceCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryGameSequenceCommand.m; sourceTree = "<group>"; };
-		D24FF317BDEA76D7FA69571B /* ASCorkboardImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCorkboardImageView.m; sourceTree = "<group>"; };
 		D24FF484CEC2E5116F750A0E /* ASSingleGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSingleGameCore.m; sourceTree = "<group>"; };
 		D24FF48F4DDC7BB722CB33BB /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 		D24FF496E6D0F93433933EED /* ASStandardGameModeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStandardGameModeTest.m; sourceTree = "<group>"; };
@@ -149,7 +158,6 @@
 		D24FF767D1BD30688F6EAEC9 /* ASGameKeyGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameKeyGenerator.h; sourceTree = "<group>"; };
 		D24FF7EEB299836AD567B51E /* ASEasyGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEasyGameDifficultyCommand.h; sourceTree = "<group>"; };
 		D24FF8B98D890D4454017525 /* ASBinaryGameKeyGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBinaryGameKeyGenerator.h; sourceTree = "<group>"; };
-		D24FF90B1B611D32888CE526 /* ASCorkboardImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCorkboardImageView.h; sourceTree = "<group>"; };
 		D24FF9A3D700EF3571317236 /* ASSlideSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSlideSegue.h; sourceTree = "<group>"; };
 		D24FFA5B2637E560FB5FC4E9 /* ASGameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameMode.h; sourceTree = "<group>"; };
 		D24FFA63D9D18EECEE65841E /* ASEasyGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEasyGameDifficultyCommand.m; sourceTree = "<group>"; };
@@ -244,23 +252,23 @@
 		C0A1E947192D6E4D00B4384D /* Number Guess */ = {
 			isa = PBXGroup;
 			children = (
+				C0A1E950192D6E4D00B4384D /* ASAppDelegate.h */,
+				C0A1E951192D6E4D00B4384D /* ASAppDelegate.m */,
+				C09F3B0019330997009BBE1C /* ASDifficultyViewController.h */,
+				C09F3B0119330997009BBE1C /* ASDifficultyViewController.m */,
+				D24FF21F3190031CD7090971 /* ASRootViewController.h */,
+				D24FFE6DF52610733A52D1CA /* ASRootViewController.m */,
+				D24FF9A3D700EF3571317236 /* ASSlideSegue.h */,
+				D24FFE3B55B599789D2D91C6 /* ASSlideSegue.m */,
 				D24FF48F4DDC7BB722CB33BB /* Command.h */,
 				D24FF150E2701E462B0725FE /* commands */,
 				C0A1E993192D71A800B4384D /* core */,
-				C0A1E950192D6E4D00B4384D /* ASAppDelegate.h */,
-				C0A1E951192D6E4D00B4384D /* ASAppDelegate.m */,
+				C0A1E991192D6EBA00B4384D /* Game.storyboard */,
 				C0A1E956192D6E4E00B4384D /* Images.xcassets */,
 				C0A1E953192D6E4E00B4384D /* Number_Guess.xcdatamodeld */,
 				C0A1E948192D6E4D00B4384D /* Supporting Files */,
-				C0A1E991192D6EBA00B4384D /* Game.storyboard */,
-				D24FFE3B55B599789D2D91C6 /* ASSlideSegue.m */,
-				D24FF9A3D700EF3571317236 /* ASSlideSegue.h */,
-				D24FF317BDEA76D7FA69571B /* ASCorkboardImageView.m */,
-				D24FF90B1B611D32888CE526 /* ASCorkboardImageView.h */,
-				C09F3B0019330997009BBE1C /* ASDifficultyViewController.h */,
-				C09F3B0119330997009BBE1C /* ASDifficultyViewController.m */,
-				D24FFE6DF52610733A52D1CA /* ASRootViewController.m */,
-				D24FF21F3190031CD7090971 /* ASRootViewController.h */,
+				C09F3B17193312CE009BBE1C /* ASGameViewController.h */,
+				C09F3B18193312CE009BBE1C /* ASGameViewController.m */,
 			);
 			path = "Number Guess";
 			sourceTree = "<group>";
@@ -305,6 +313,10 @@
 				C09F3B0319330F4B009BBE1C /* arrow_left_invert@2x.png */,
 				C09F3B0B19330F5A009BBE1C /* arrow_right.png */,
 				C09F3B0519330F4B009BBE1C /* arrow_right@2x.png */,
+				C09F3B10193310B2009BBE1C /* buttonboard_280_48.png */,
+				C09F3B14193310BE009BBE1C /* buttonboard_280_48@2x.png */,
+				C09F3B13193310BE009BBE1C /* buttonboard_280_48_right@2x.png */,
+				C09F3B0F193310B2009BBE1C /* buttonboard_280_48_right.png */,
 				C0A1E983192D6EA300B4384D /* canvas_view.png */,
 				C0A1E975192D6E9100B4384D /* canvas_view@2x.png */,
 				C09F3AFC1933082A009BBE1C /* corkboard_280_50.png */,
@@ -464,6 +476,7 @@
 				C0A1E97D192D6E9100B4384D /* game_view@2x.png in Resources */,
 				C09F3B0619330F4B009BBE1C /* arrow_left_invert@2x.png in Resources */,
 				C0A1E981192D6E9100B4384D /* sign_right@2x.png in Resources */,
+				C09F3B11193310B2009BBE1C /* buttonboard_280_48_right.png in Resources */,
 				C09F3B0C19330F5A009BBE1C /* arrow_left_invert.png in Resources */,
 				C0A1E98E192D6EA300B4384D /* sign_question.png in Resources */,
 				C0A1E98A192D6EA300B4384D /* canvas_view.png in Resources */,
@@ -471,6 +484,7 @@
 				C0A1E98D192D6EA300B4384D /* sign_left.png in Resources */,
 				C09F3AFB1933081F009BBE1C /* sand@2x.png in Resources */,
 				C0A1E98C192D6EA300B4384D /* sign_cross.png in Resources */,
+				C09F3B12193310B2009BBE1C /* buttonboard_280_48.png in Resources */,
 				C09F3B0D19330F5A009BBE1C /* arrow_left.png in Resources */,
 				C0A1E992192D6EBA00B4384D /* Game.storyboard in Resources */,
 				C024F1D11932E35D0065FD33 /* cm_fresh_paint.ttf in Resources */,
@@ -481,7 +495,9 @@
 				C09F3B0719330F4B009BBE1C /* arrow_left@2x.png in Resources */,
 				C0A1E980192D6E9100B4384D /* sign_question@2x.png in Resources */,
 				C0A1E957192D6E4E00B4384D /* Images.xcassets in Resources */,
+				C09F3B15193310BE009BBE1C /* buttonboard_280_48_right@2x.png in Resources */,
 				C0A1E98B192D6EA300B4384D /* game_view.png in Resources */,
+				C09F3B16193310BE009BBE1C /* buttonboard_280_48@2x.png in Resources */,
 				C09F3AFE1933082A009BBE1C /* corkboard_280_50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,8 +532,8 @@
 				D24FF77CD53F9C9FBC96B7B6 /* ASHardGameDifficultyCommand.m in Sources */,
 				D24FFBCEC70CC79A706478DE /* ASCustomGameDifficultyCommand.m in Sources */,
 				D24FFBD1314247F9108E55C3 /* ASSlideSegue.m in Sources */,
-				D24FFB16597132740230EEA5 /* ASCorkboardImageView.m in Sources */,
 				C09F3B0219330997009BBE1C /* ASDifficultyViewController.m in Sources */,
+				C09F3B19193312CE009BBE1C /* ASGameViewController.m in Sources */,
 				D24FF221C11C70DD8345F661 /* ASRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
