@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C024F1D11932E35D0065FD33 /* cm_fresh_paint.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C024F1D01932E35D0065FD33 /* cm_fresh_paint.ttf */; };
 		C0A1E940192D6E4D00B4384D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E93F192D6E4D00B4384D /* Foundation.framework */; };
 		C0A1E942192D6E4D00B4384D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E941192D6E4D00B4384D /* CoreGraphics.framework */; };
 		C0A1E944192D6E4D00B4384D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E943192D6E4D00B4384D /* UIKit.framework */; };
@@ -50,7 +51,9 @@
 		D24FFA454AC1079D6BA2568E /* ASBasicScoreTrackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */; };
 		D24FFAC504DB90FA69990695 /* ASGameCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFDE52222FBC0B1D791C8 /* ASGameCore.m */; };
 		D24FFAFDBA89206BC2F75C77 /* ASBinaryGameSequenceCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF303B88E450E3F64FA8A /* ASBinaryGameSequenceCommand.m */; };
+		D24FFB16597132740230EEA5 /* ASCorkboardImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF317BDEA76D7FA69571B /* ASCorkboardImageView.m */; };
 		D24FFBCEC70CC79A706478DE /* ASCustomGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF63D70DE4B94E22B73A0 /* ASCustomGameDifficultyCommand.m */; };
+		D24FFBD1314247F9108E55C3 /* ASSlideSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFE3B55B599789D2D91C6 /* ASSlideSegue.m */; };
 		D24FFE6BD8D6E4212CCCDA1C /* ASMediumGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF203DDEB5AAA6A208847 /* ASMediumGameDifficultyCommand.m */; };
 		D24FFFBCFA13A793D58FE473 /* ASBinaryGameKeyGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF1792541532F9118E6E5 /* ASBinaryGameKeyGenerator.m */; };
 /* End PBXBuildFile section */
@@ -66,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C024F1D01932E35D0065FD33 /* cm_fresh_paint.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cm_fresh_paint.ttf; sourceTree = "<group>"; };
 		C0A1E93C192D6E4D00B4384D /* Number Guess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Guess.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A1E93F192D6E4D00B4384D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0A1E941192D6E4D00B4384D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,6 +111,7 @@
 		D24FF203DDEB5AAA6A208847 /* ASMediumGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMediumGameDifficultyCommand.m; sourceTree = "<group>"; };
 		D24FF2B705A6D1EBFA1F61FE /* ASCustomGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCustomGameDifficultyCommand.h; sourceTree = "<group>"; };
 		D24FF303B88E450E3F64FA8A /* ASBinaryGameSequenceCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryGameSequenceCommand.m; sourceTree = "<group>"; };
+		D24FF317BDEA76D7FA69571B /* ASCorkboardImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCorkboardImageView.m; sourceTree = "<group>"; };
 		D24FF484CEC2E5116F750A0E /* ASSingleGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSingleGameCore.m; sourceTree = "<group>"; };
 		D24FF48F4DDC7BB722CB33BB /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 		D24FF496E6D0F93433933EED /* ASStandardGameModeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStandardGameModeTest.m; sourceTree = "<group>"; };
@@ -119,6 +124,8 @@
 		D24FF767D1BD30688F6EAEC9 /* ASGameKeyGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameKeyGenerator.h; sourceTree = "<group>"; };
 		D24FF7EEB299836AD567B51E /* ASEasyGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASEasyGameDifficultyCommand.h; sourceTree = "<group>"; };
 		D24FF8B98D890D4454017525 /* ASBinaryGameKeyGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBinaryGameKeyGenerator.h; sourceTree = "<group>"; };
+		D24FF90B1B611D32888CE526 /* ASCorkboardImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCorkboardImageView.h; sourceTree = "<group>"; };
+		D24FF9A3D700EF3571317236 /* ASSlideSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSlideSegue.h; sourceTree = "<group>"; };
 		D24FFA5B2637E560FB5FC4E9 /* ASGameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameMode.h; sourceTree = "<group>"; };
 		D24FFA63D9D18EECEE65841E /* ASEasyGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASEasyGameDifficultyCommand.m; sourceTree = "<group>"; };
 		D24FFBBE99999C74B3778E8C /* ASGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGame.h; sourceTree = "<group>"; };
@@ -128,6 +135,7 @@
 		D24FFCC3FB49BEE244CAC943 /* ASSingleGameCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSingleGameCore.h; sourceTree = "<group>"; };
 		D24FFD8EE73566971D7A947E /* ASCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCard.h; sourceTree = "<group>"; };
 		D24FFDE52222FBC0B1D791C8 /* ASGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGameCore.m; sourceTree = "<group>"; };
+		D24FFE3B55B599789D2D91C6 /* ASSlideSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSlideSegue.m; sourceTree = "<group>"; };
 		D24FFEF69A3784BF4E4F0816 /* ASStandardGameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStandardGameMode.h; sourceTree = "<group>"; };
 		D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBasicScoreTrackerTest.m; sourceTree = "<group>"; };
 		D24FFFC6368DBED22F65EE59 /* ASHardGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHardGameDifficultyCommand.h; sourceTree = "<group>"; };
@@ -159,6 +167,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C024F1D21932E3650065FD33 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C024F1D31932E37C0065FD33 /* Fonts */,
+				C0A1E974192D6E6B00B4384D /* Images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		C024F1D31932E37C0065FD33 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C024F1D01932E35D0065FD33 /* cm_fresh_paint.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		C0A1E933192D6E4D00B4384D = {
 			isa = PBXGroup;
 			children = (
@@ -193,16 +218,19 @@
 		C0A1E947192D6E4D00B4384D /* Number Guess */ = {
 			isa = PBXGroup;
 			children = (
+				D24FF48F4DDC7BB722CB33BB /* Command.h */,
+				D24FF150E2701E462B0725FE /* commands */,
 				C0A1E993192D71A800B4384D /* core */,
 				C0A1E950192D6E4D00B4384D /* ASAppDelegate.h */,
 				C0A1E951192D6E4D00B4384D /* ASAppDelegate.m */,
 				C0A1E956192D6E4E00B4384D /* Images.xcassets */,
 				C0A1E953192D6E4E00B4384D /* Number_Guess.xcdatamodeld */,
-				C0A1E974192D6E6B00B4384D /* Images */,
 				C0A1E948192D6E4D00B4384D /* Supporting Files */,
 				C0A1E991192D6EBA00B4384D /* Game.storyboard */,
-				D24FF150E2701E462B0725FE /* commands */,
-				D24FF48F4DDC7BB722CB33BB /* Command.h */,
+				D24FFE3B55B599789D2D91C6 /* ASSlideSegue.m */,
+				D24FF9A3D700EF3571317236 /* ASSlideSegue.h */,
+				D24FF317BDEA76D7FA69571B /* ASCorkboardImageView.m */,
+				D24FF90B1B611D32888CE526 /* ASCorkboardImageView.h */,
 			);
 			path = "Number Guess";
 			sourceTree = "<group>";
@@ -210,6 +238,7 @@
 		C0A1E948192D6E4D00B4384D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C024F1D21932E3650065FD33 /* Assets */,
 				C0A1E949192D6E4D00B4384D /* Number Guess-Info.plist */,
 				C0A1E94A192D6E4D00B4384D /* InfoPlist.strings */,
 				C0A1E94D192D6E4D00B4384D /* main.m */,
@@ -398,6 +427,7 @@
 				C0A1E98D192D6EA300B4384D /* sign_left.png in Resources */,
 				C0A1E98C192D6EA300B4384D /* sign_cross.png in Resources */,
 				C0A1E992192D6EBA00B4384D /* Game.storyboard in Resources */,
+				C024F1D11932E35D0065FD33 /* cm_fresh_paint.ttf in Resources */,
 				C0A1E990192D6EA300B4384D /* sign_tick.png in Resources */,
 				C0A1E97C192D6E9100B4384D /* canvas_view@2x.png in Resources */,
 				C0A1E980192D6E9100B4384D /* sign_question@2x.png in Resources */,
@@ -435,6 +465,8 @@
 				D24FFE6BD8D6E4212CCCDA1C /* ASMediumGameDifficultyCommand.m in Sources */,
 				D24FF77CD53F9C9FBC96B7B6 /* ASHardGameDifficultyCommand.m in Sources */,
 				D24FFBCEC70CC79A706478DE /* ASCustomGameDifficultyCommand.m in Sources */,
+				D24FFBD1314247F9108E55C3 /* ASSlideSegue.m in Sources */,
+				D24FFB16597132740230EEA5 /* ASCorkboardImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
