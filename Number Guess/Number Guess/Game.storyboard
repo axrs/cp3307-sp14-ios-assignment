@@ -135,7 +135,7 @@
                                     <constraint firstItem="4Y0-7G-ZRc" firstAttribute="top" secondItem="cWi-44-Prb" secondAttribute="top" id="v0D-jY-Llr"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDh-yZ-kbR">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDh-yZ-kbR">
                                 <rect key="frame" x="256" y="320" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="sign_right.png">
@@ -149,44 +149,30 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q71-ad-COa">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q71-ad-COa">
                                 <rect key="frame" x="128" y="320" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="sign_tick.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNL-pn-uKh">
-                                <rect key="frame" x="96" y="320" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sign_cross.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sch-Ks-9Tx">
-                                <rect key="frame" x="160" y="320" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="sign_tick.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1et-t5-lHk">
-                                <rect key="frame" x="9" y="438" width="77" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1et-t5-lHk">
+                                <rect key="frame" x="9" y="438" width="90" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="4pL-WG-BEg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title=" Back" image="arrow_left.png">
+                                <state key="normal" title=" Difficulty" image="arrow_left.png">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="dismissView" destination="hqu-0X-ANR" eventType="touchUpInside" id="leD-0K-jwy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDr-Vb-tsm">
-                                <rect key="frame" x="122" y="438" width="77" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDr-Vb-tsm">
+                                <rect key="frame" x="122" y="438" width="70" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="1YW-5Z-vac"/>
@@ -203,21 +189,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="d48-Xk-JWP" firstAttribute="top" secondItem="pNL-pn-uKh" secondAttribute="top" id="05j-AF-aYT"/>
                             <constraint firstItem="nCA-Wo-6v6" firstAttribute="centerX" secondItem="cWi-44-Prb" secondAttribute="centerX" id="4Pb-wa-IqZ"/>
                             <constraint firstItem="nCA-Wo-6v6" firstAttribute="top" secondItem="m1I-AC-afC" secondAttribute="top" id="5FN-cM-hfh"/>
-                            <constraint firstItem="pNL-pn-uKh" firstAttribute="leading" secondItem="d48-Xk-JWP" secondAttribute="trailing" constant="32" id="6Sy-6V-yLQ"/>
                             <constraint firstItem="ZDr-Vb-tsm" firstAttribute="bottom" secondItem="1et-t5-lHk" secondAttribute="bottom" id="BWn-rh-QSG"/>
                             <constraint firstItem="lDh-yZ-kbR" firstAttribute="trailing" secondItem="nCA-Wo-6v6" secondAttribute="trailing" id="M5R-wz-y5I"/>
-                            <constraint firstItem="lDh-yZ-kbR" firstAttribute="top" secondItem="Sch-Ks-9Tx" secondAttribute="top" id="MmJ-Rv-mgM"/>
                             <constraint firstItem="Q71-ad-COa" firstAttribute="centerX" secondItem="cWi-44-Prb" secondAttribute="centerX" id="PVa-tW-aeQ"/>
                             <constraint firstItem="ZDr-Vb-tsm" firstAttribute="top" secondItem="1et-t5-lHk" secondAttribute="top" id="TZa-SJ-Ex3"/>
                             <constraint firstItem="ZDr-Vb-tsm" firstAttribute="centerX" secondItem="Q71-ad-COa" secondAttribute="centerX" id="V8R-5A-gRS"/>
                             <constraint firstItem="d48-Xk-JWP" firstAttribute="leading" secondItem="nCA-Wo-6v6" secondAttribute="leading" id="Wrm-rK-MgI"/>
-                            <constraint firstItem="Q71-ad-COa" firstAttribute="top" secondItem="Sch-Ks-9Tx" secondAttribute="top" id="ZB4-9O-hRu"/>
-                            <constraint firstItem="Q71-ad-COa" firstAttribute="top" secondItem="pNL-pn-uKh" secondAttribute="top" id="ZdP-jD-ffd"/>
                             <constraint firstItem="d48-Xk-JWP" firstAttribute="top" secondItem="cWi-44-Prb" secondAttribute="bottom" constant="12" id="amy-cP-hRC"/>
-                            <constraint firstItem="lDh-yZ-kbR" firstAttribute="leading" secondItem="Sch-Ks-9Tx" secondAttribute="trailing" constant="32" id="csG-Yp-fLZ"/>
                             <constraint firstItem="1et-t5-lHk" firstAttribute="leading" secondItem="m1I-AC-afC" secondAttribute="leading" constant="9" id="f8L-Fu-Fsd"/>
                             <constraint firstItem="d48-Xk-JWP" firstAttribute="leading" secondItem="m1I-AC-afC" secondAttribute="leading" id="geK-27-r8Y"/>
                             <constraint firstItem="k2V-E8-0JT" firstAttribute="top" secondItem="1et-t5-lHk" secondAttribute="bottom" constant="8" id="joR-w9-xL0"/>
@@ -245,9 +225,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="241-Lu-qdo">
                                 <rect key="frame" x="20" y="160" width="280" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Play">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Play" backgroundImage="buttonboard_280_48_right.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Bd8-ym-Kvd" kind="push" customClass="ASSlideSegue" id="Wsm-Jy-XA5"/>
@@ -256,15 +238,21 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtb-fU-Lt6">
                                 <rect key="frame" x="20" y="216" width="280" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Highscores">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Highscores" backgroundImage="buttonboard_280_48.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbL-if-m4b">
                                 <rect key="frame" x="20" y="272" width="280" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Options">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Options" backgroundImage="buttonboard_280_48.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                         </subviews>
@@ -299,11 +287,11 @@
     <resources>
         <image name="arrow_left.png" width="22" height="19"/>
         <image name="arrow_left_invert.png" width="22" height="19"/>
+        <image name="buttonboard_280_48.png" width="280" height="48"/>
         <image name="buttonboard_280_48_right.png" width="280" height="48"/>
         <image name="canvas_view.png" width="288" height="288"/>
         <image name="corkboard_280_50.png" width="560" height="100"/>
         <image name="game_view.png" width="320" height="568"/>
-        <image name="sign_cross.png" width="64" height="64"/>
         <image name="sign_left.png" width="64" height="64"/>
         <image name="sign_right.png" width="64" height="64"/>
         <image name="sign_tick.png" width="64" height="64"/>
