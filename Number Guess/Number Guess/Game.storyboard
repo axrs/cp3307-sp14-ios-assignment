@@ -206,7 +206,7 @@
             </objects>
             <point key="canvasLocation" x="1259" y="53"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Zao-s2-ZAT">
             <objects>
                 <viewController id="B5Z-tz-gKh" customClass="ASHomeViewController" sceneMemberID="viewController">
@@ -260,10 +260,10 @@
             </objects>
             <point key="canvasLocation" x="454" y="53"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Root View Controller-->
         <scene sceneID="mHe-Ku-Myc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3iu-FB-JAw" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3iu-FB-JAw" customClass="ASRootNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZsX-fi-PJI">
