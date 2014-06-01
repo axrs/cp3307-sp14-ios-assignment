@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ASRootViewController : UIViewController
+@interface ASHomeViewController : UIViewController
 
 - (IBAction)unwindToRoot:(UIStoryboardSegue *)sender;
 @end

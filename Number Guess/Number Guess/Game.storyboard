@@ -90,7 +90,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="gbD-4O-uhw">
@@ -187,7 +187,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nCA-Wo-6v6" firstAttribute="centerX" secondItem="cWi-44-Prb" secondAttribute="centerX" id="4Pb-wa-IqZ"/>
                             <constraint firstItem="nCA-Wo-6v6" firstAttribute="top" secondItem="m1I-AC-afC" secondAttribute="top" id="5FN-cM-hfh"/>
@@ -209,7 +209,7 @@
         <!--Root View Controller-->
         <scene sceneID="Zao-s2-ZAT">
             <objects>
-                <viewController id="B5Z-tz-gKh" customClass="ASRootViewController" sceneMemberID="viewController">
+                <viewController id="B5Z-tz-gKh" customClass="ASHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BEi-Ht-oKf"/>
                         <viewControllerLayoutGuide type="bottom" id="ZqJ-Hs-Bww"/>
@@ -252,7 +252,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="eHe-gD-pQS"/>
                 </viewController>

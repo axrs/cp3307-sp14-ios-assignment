@@ -58,7 +58,7 @@
 		C0A55545193BE9CA0002DE57 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A55544193BE9CA0002DE57 /* background.png */; };
 		C0A55547193BE9D40002DE57 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A55546193BE9D40002DE57 /* background@2x.png */; };
 		D24FF1F1AE0839B8FB95DDDB /* ASCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF648D84D1A29BDC840CE /* ASCard.m */; };
-		D24FF221C11C70DD8345F661 /* ASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFE6DF52610733A52D1CA /* ASRootViewController.m */; };
+		D24FF221C11C70DD8345F661 /* ASHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFE6DF52610733A52D1CA /* ASHomeViewController.m */; };
 		D24FF253861D687C31E454DF /* ASEasyGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFA63D9D18EECEE65841E /* ASEasyGameDifficultyCommand.m */; };
 		D24FF28539B09868DB012483 /* ASStandardGameMode.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF64FEE2F9762A3EA6E70 /* ASStandardGameMode.m */; };
 		D24FF2E3C653D7BA04DC387B /* ASSingleGameCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF484CEC2E5116F750A0E /* ASSingleGameCore.m */; };
@@ -147,7 +147,7 @@
 		D24FF1792541532F9118E6E5 /* ASBinaryGameKeyGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryGameKeyGenerator.m; sourceTree = "<group>"; };
 		D24FF1F66FCFA64260B320C6 /* ASBasicScoreTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBasicScoreTracker.m; sourceTree = "<group>"; };
 		D24FF203DDEB5AAA6A208847 /* ASMediumGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMediumGameDifficultyCommand.m; sourceTree = "<group>"; };
-		D24FF21F3190031CD7090971 /* ASRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRootViewController.h; sourceTree = "<group>"; };
+		D24FF21F3190031CD7090971 /* ASHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHomeViewController.h; sourceTree = "<group>"; };
 		D24FF2B705A6D1EBFA1F61FE /* ASCustomGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCustomGameDifficultyCommand.h; sourceTree = "<group>"; };
 		D24FF303B88E450E3F64FA8A /* ASBinaryGameSequenceCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryGameSequenceCommand.m; sourceTree = "<group>"; };
 		D24FF484CEC2E5116F750A0E /* ASSingleGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSingleGameCore.m; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		D24FFD8EE73566971D7A947E /* ASCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCard.h; sourceTree = "<group>"; };
 		D24FFDE52222FBC0B1D791C8 /* ASGameCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGameCore.m; sourceTree = "<group>"; };
 		D24FFE3B55B599789D2D91C6 /* ASSlideSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSlideSegue.m; sourceTree = "<group>"; };
-		D24FFE6DF52610733A52D1CA /* ASRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRootViewController.m; sourceTree = "<group>"; };
+		D24FFE6DF52610733A52D1CA /* ASHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHomeViewController.m; sourceTree = "<group>"; };
 		D24FFEF69A3784BF4E4F0816 /* ASStandardGameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStandardGameMode.h; sourceTree = "<group>"; };
 		D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBasicScoreTrackerTest.m; sourceTree = "<group>"; };
 		D24FFFC6368DBED22F65EE59 /* ASHardGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHardGameDifficultyCommand.h; sourceTree = "<group>"; };
@@ -260,8 +260,8 @@
 				C0A1E951192D6E4D00B4384D /* ASAppDelegate.m */,
 				C09F3B0019330997009BBE1C /* ASDifficultyViewController.h */,
 				C09F3B0119330997009BBE1C /* ASDifficultyViewController.m */,
-				D24FF21F3190031CD7090971 /* ASRootViewController.h */,
-				D24FFE6DF52610733A52D1CA /* ASRootViewController.m */,
+				D24FF21F3190031CD7090971 /* ASHomeViewController.h */,
+				D24FFE6DF52610733A52D1CA /* ASHomeViewController.m */,
 				D24FF9A3D700EF3571317236 /* ASSlideSegue.h */,
 				D24FFE3B55B599789D2D91C6 /* ASSlideSegue.m */,
 				D24FF48F4DDC7BB722CB33BB /* Command.h */,
@@ -542,7 +542,7 @@
 				D24FFBD1314247F9108E55C3 /* ASSlideSegue.m in Sources */,
 				C09F3B0219330997009BBE1C /* ASDifficultyViewController.m in Sources */,
 				C09F3B19193312CE009BBE1C /* ASGameViewController.m in Sources */,
-				D24FF221C11C70DD8345F661 /* ASRootViewController.m in Sources */,
+				D24FF221C11C70DD8345F661 /* ASHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
