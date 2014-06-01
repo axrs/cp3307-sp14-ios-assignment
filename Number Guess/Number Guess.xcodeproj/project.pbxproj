@@ -55,6 +55,8 @@
 		C0A1E990192D6EA300B4384D /* sign_tick.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E989192D6EA300B4384D /* sign_tick.png */; };
 		C0A1E992192D6EBA00B4384D /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A1E991192D6EBA00B4384D /* Game.storyboard */; };
 		C0A1E996192D836400B4384D /* ASCardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A1E995192D836400B4384D /* ASCardTest.m */; };
+		C0A55545193BE9CA0002DE57 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A55544193BE9CA0002DE57 /* background.png */; };
+		C0A55547193BE9D40002DE57 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A55546193BE9D40002DE57 /* background@2x.png */; };
 		D24FF1F1AE0839B8FB95DDDB /* ASCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF648D84D1A29BDC840CE /* ASCard.m */; };
 		D24FF221C11C70DD8345F661 /* ASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFE6DF52610733A52D1CA /* ASRootViewController.m */; };
 		D24FF253861D687C31E454DF /* ASEasyGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFA63D9D18EECEE65841E /* ASEasyGameDifficultyCommand.m */; };
@@ -138,6 +140,8 @@
 		C0A1E989192D6EA300B4384D /* sign_tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_tick.png; sourceTree = "<group>"; };
 		C0A1E991192D6EBA00B4384D /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		C0A1E995192D836400B4384D /* ASCardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCardTest.m; sourceTree = "<group>"; };
+		C0A55544193BE9CA0002DE57 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		C0A55546193BE9D40002DE57 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		D24FF05B42845EC5FC4E83FB /* ASGameCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameCore.h; sourceTree = "<group>"; };
 		D24FF105C9DCE217A1B14CD5 /* ASMediumGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMediumGameDifficultyCommand.h; sourceTree = "<group>"; };
 		D24FF1792541532F9118E6E5 /* ASBinaryGameKeyGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryGameKeyGenerator.m; sourceTree = "<group>"; };
@@ -313,10 +317,12 @@
 				C09F3B0319330F4B009BBE1C /* arrow_left_invert@2x.png */,
 				C09F3B0B19330F5A009BBE1C /* arrow_right.png */,
 				C09F3B0519330F4B009BBE1C /* arrow_right@2x.png */,
+				C0A55544193BE9CA0002DE57 /* background.png */,
+				C0A55546193BE9D40002DE57 /* background@2x.png */,
 				C09F3B10193310B2009BBE1C /* buttonboard_280_48.png */,
 				C09F3B14193310BE009BBE1C /* buttonboard_280_48@2x.png */,
-				C09F3B13193310BE009BBE1C /* buttonboard_280_48_right@2x.png */,
 				C09F3B0F193310B2009BBE1C /* buttonboard_280_48_right.png */,
+				C09F3B13193310BE009BBE1C /* buttonboard_280_48_right@2x.png */,
 				C0A1E983192D6EA300B4384D /* canvas_view.png */,
 				C0A1E975192D6E9100B4384D /* canvas_view@2x.png */,
 				C09F3AFC1933082A009BBE1C /* corkboard_280_50.png */,
@@ -479,6 +485,7 @@
 				C09F3B11193310B2009BBE1C /* buttonboard_280_48_right.png in Resources */,
 				C09F3B0C19330F5A009BBE1C /* arrow_left_invert.png in Resources */,
 				C0A1E98E192D6EA300B4384D /* sign_question.png in Resources */,
+				C0A55547193BE9D40002DE57 /* background@2x.png in Resources */,
 				C0A1E98A192D6EA300B4384D /* canvas_view.png in Resources */,
 				C0A1E98F192D6EA300B4384D /* sign_right.png in Resources */,
 				C0A1E98D192D6EA300B4384D /* sign_left.png in Resources */,
@@ -498,6 +505,7 @@
 				C09F3B15193310BE009BBE1C /* buttonboard_280_48_right@2x.png in Resources */,
 				C0A1E98B192D6EA300B4384D /* game_view.png in Resources */,
 				C09F3B16193310BE009BBE1C /* buttonboard_280_48@2x.png in Resources */,
+				C0A55545193BE9CA0002DE57 /* background.png in Resources */,
 				C09F3AFE1933082A009BBE1C /* corkboard_280_50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
