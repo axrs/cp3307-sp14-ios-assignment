@@ -58,6 +58,8 @@
 		C0A55545193BE9CA0002DE57 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A55544193BE9CA0002DE57 /* background.png */; };
 		C0A55547193BE9D40002DE57 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A55546193BE9D40002DE57 /* background@2x.png */; };
 		C0A5554D193BECFE0002DE57 /* ASRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A5554C193BECFE0002DE57 /* ASRootNavigationController.m */; };
+		C0D79169193BFE0100B756D1 /* ASCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D79168193BFE0100B756D1 /* ASCardView.m */; };
+		C0D7916C193C118C00B756D1 /* ASUserGuessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D7916B193C118C00B756D1 /* ASUserGuessViewController.m */; };
 		D24FF1F1AE0839B8FB95DDDB /* ASCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF648D84D1A29BDC840CE /* ASCard.m */; };
 		D24FF221C11C70DD8345F661 /* ASHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFE6DF52610733A52D1CA /* ASHomeViewController.m */; };
 		D24FF253861D687C31E454DF /* ASEasyGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFA63D9D18EECEE65841E /* ASEasyGameDifficultyCommand.m */; };
@@ -146,6 +148,10 @@
 		C0A55546193BE9D40002DE57 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		C0A5554B193BECFE0002DE57 /* ASRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRootNavigationController.h; sourceTree = "<group>"; };
 		C0A5554C193BECFE0002DE57 /* ASRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRootNavigationController.m; sourceTree = "<group>"; };
+		C0D79167193BFE0100B756D1 /* ASCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCardView.h; sourceTree = "<group>"; };
+		C0D79168193BFE0100B756D1 /* ASCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCardView.m; sourceTree = "<group>"; };
+		C0D7916A193C118C00B756D1 /* ASUserGuessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUserGuessViewController.h; sourceTree = "<group>"; };
+		C0D7916B193C118C00B756D1 /* ASUserGuessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUserGuessViewController.m; sourceTree = "<group>"; };
 		D24FF05B42845EC5FC4E83FB /* ASGameCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameCore.h; sourceTree = "<group>"; };
 		D24FF0F33B1523C621F8E658 /* OldStyleNavigationControllerAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldStyleNavigationControllerAnimatedTransition.h; sourceTree = "<group>"; };
 		D24FF105C9DCE217A1B14CD5 /* ASMediumGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMediumGameDifficultyCommand.h; sourceTree = "<group>"; };
@@ -278,6 +284,10 @@
 				D24FF150E2701E462B0725FE /* commands */,
 				C0A1E993192D71A800B4384D /* core */,
 				C0A1E991192D6EBA00B4384D /* Game.storyboard */,
+				C0D7916A193C118C00B756D1 /* ASUserGuessViewController.h */,
+				C0D7916B193C118C00B756D1 /* ASUserGuessViewController.m */,
+				C0D79167193BFE0100B756D1 /* ASCardView.h */,
+				C0D79168193BFE0100B756D1 /* ASCardView.m */,
 				C0A1E956192D6E4E00B4384D /* Images.xcassets */,
 				C0A1E953192D6E4E00B4384D /* Number_Guess.xcdatamodeld */,
 				C0A1E948192D6E4D00B4384D /* Supporting Files */,
@@ -546,6 +556,7 @@
 				D24FFAC504DB90FA69990695 /* ASGameCore.m in Sources */,
 				D24FF2E3C653D7BA04DC387B /* ASSingleGameCore.m in Sources */,
 				D24FFAFDBA89206BC2F75C77 /* ASBinaryGameSequenceCommand.m in Sources */,
+				C0D7916C193C118C00B756D1 /* ASUserGuessViewController.m in Sources */,
 				D24FF253861D687C31E454DF /* ASEasyGameDifficultyCommand.m in Sources */,
 				D24FFE6BD8D6E4212CCCDA1C /* ASMediumGameDifficultyCommand.m in Sources */,
 				D24FF77CD53F9C9FBC96B7B6 /* ASHardGameDifficultyCommand.m in Sources */,
@@ -554,6 +565,7 @@
 				C09F3B0219330997009BBE1C /* ASDifficultyViewController.m in Sources */,
 				C09F3B19193312CE009BBE1C /* ASGameViewController.m in Sources */,
 				D24FF221C11C70DD8345F661 /* ASHomeViewController.m in Sources */,
+				C0D79169193BFE0100B756D1 /* ASCardView.m in Sources */,
 				D24FFD339A184F7B4A920B2D /* OldStyleNavigationControllerAnimatedTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

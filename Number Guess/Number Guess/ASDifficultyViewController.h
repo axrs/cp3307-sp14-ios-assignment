@@ -12,4 +12,10 @@
 
 - (IBAction)unwindToDifficultySelection:(UIStoryboardSegue *)sender;
 
+- (IBAction)easyDifficultySelection:(UIView *)sender;
+
+- (IBAction)mediumDifficultySelection:(UIView *)sender;
+
+- (IBAction)hardDifficultySelection:(UIView *)sender;
+
 @end

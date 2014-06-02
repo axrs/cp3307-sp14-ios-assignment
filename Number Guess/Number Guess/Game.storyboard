@@ -26,6 +26,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="hardDifficultySelection:" destination="Bd8-ym-Kvd" eventType="touchUpInside" id="mgY-G1-onY"/>
                                     <segue destination="hqu-0X-ANR" kind="push" customClass="ASSlideSegue" id="cMS-wC-8cw"/>
                                 </connections>
                             </button>
@@ -39,6 +40,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="mediumDifficultySelection:" destination="Bd8-ym-Kvd" eventType="touchUpInside" id="MK2-s9-6NV"/>
                                     <segue destination="hqu-0X-ANR" kind="push" customClass="ASSlideSegue" id="k7d-Ub-lF5"/>
                                 </connections>
                             </button>
@@ -52,6 +54,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="easyDifficultySelection:" destination="Bd8-ym-Kvd" eventType="touchUpInside" id="hv1-i5-Ovk"/>
                                     <segue destination="hqu-0X-ANR" kind="push" customClass="ASSlideSegue" id="ZDV-3b-bI5"/>
                                 </connections>
                             </button>
@@ -117,8 +120,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="game_view.png" translatesAutoresizingMaskIntoConstraints="NO" id="nCA-Wo-6v6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="SES-hN-P94" appends="YES" id="rB0-b5-Jcl"/>
+                                </connections>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWi-44-Prb">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWi-44-Prb">
                                 <rect key="frame" x="16" y="20" width="288" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -126,6 +133,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYy-75-elG" customClass="ASCardView">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
@@ -135,7 +147,7 @@
                                     <constraint firstItem="4Y0-7G-ZRc" firstAttribute="top" secondItem="cWi-44-Prb" secondAttribute="top" id="v0D-jY-Llr"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q71-ad-COa">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q71-ad-COa">
                                 <rect key="frame" x="128" y="320" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="sign_tick.png">
@@ -172,7 +184,7 @@
                                     <action selector="dismissToRoot" destination="hqu-0X-ANR" eventType="touchUpInside" id="QFz-DB-OxU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9e-AU-dEL">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9e-AU-dEL">
                                 <rect key="frame" x="16" y="320" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="sign_left.png">
@@ -185,6 +197,9 @@
                                 <state key="normal" backgroundImage="sign_right.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hqu-0X-ANR" kind="push" identifier="GameCardSegue" id="Kp3-Vb-p0A"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -199,12 +214,72 @@
                             <constraint firstItem="k2V-E8-0JT" firstAttribute="top" secondItem="1et-t5-lHk" secondAttribute="bottom" constant="8" id="joR-w9-xL0"/>
                             <constraint firstItem="cWi-44-Prb" firstAttribute="top" secondItem="m1I-AC-afC" secondAttribute="top" constant="20" symbolic="YES" id="mh8-uL-mZf"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SES-hN-P94" appends="YES" id="46Z-EU-qma"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="wr1-QV-Rxa"/>
+                    <connections>
+                        <outlet property="cardView" destination="BYy-75-elG" id="C6I-MH-w7G"/>
+                        <outlet property="hintButton" destination="Q71-ad-COa" id="qCL-Bg-f29"/>
+                        <outlet property="nextCardButton" destination="PVe-8Z-vrq" id="Dvf-d4-oIU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GH4-1c-vJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="SES-hN-P94">
+                    <connections>
+                        <action selector="handleSwipeLeft:" destination="hqu-0X-ANR" id="dpO-Rs-h8R"/>
+                        <segue destination="hqu-0X-ANR" kind="push" identifier="GameCardSegue" id="CPw-il-ITF"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1259" y="53"/>
+            <point key="canvasLocation" x="1560" y="-63"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9ws-84-QS8">
+            <objects>
+                <viewController storyboardIdentifier="NumberGuessController" id="r5p-xe-0VP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R5N-HQ-5Kz"/>
+                        <viewControllerLayoutGuide type="bottom" id="dkK-K9-GHS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oer-W2-MxA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number Guess Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Td-7k-JUd">
+                                <rect key="frame" x="63" y="20" width="195" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzR-OV-Hpt">
+                                <rect key="frame" x="20" y="169" width="130" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Play Again" backgroundImage="buttonboard_280_48.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRh-oN-vNr">
+                                <rect key="frame" x="170" y="169" width="130" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Home" backgroundImage="buttonboard_280_48.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wO0-z9-guS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="598"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Zao-s2-ZAT">
@@ -260,7 +335,7 @@
             </objects>
             <point key="canvasLocation" x="454" y="53"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Root Navigation Controller-->
         <scene sceneID="mHe-Ku-Myc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3iu-FB-JAw" customClass="ASRootNavigationController" sceneMemberID="viewController">

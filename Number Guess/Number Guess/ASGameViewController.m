@@ -7,12 +7,14 @@
 //
 
 #import "ASGameViewController.h"
+#import "ASSingleGameCore.h"
 
 @interface ASGameViewController ()
 
 @end
 
 @implementation ASGameViewController
+static int viewCount;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -24,7 +26,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    if (viewCount == 0) {
+        [self resetGame];
+    } else {
+        [self clearPreviousCardFromNavigationStack];
+    }
+
+    [self setCardForView];
+}
+
+- (void)resetGame {
+    [[ASSingleGameCore sharedInstance] reset];
+}
+
+- (void)clearPreviousCardFromNavigationStack {
+    //Remove the previous cards from the Navigation stack.
+    NSMutableArray *navigationControllers = [[NSMutableArray alloc] initWithArray:self.navigationController.viewControllers];
+
+    //The total number of controlers to parse = count - current view
+    int index = [navigationControllers count] - 2;
+    for (index; index > 0; index--) {
+
+        NSObject *controller = [navigationControllers objectAtIndex:index];
+
+        if ([self isKindOfClass:[controller class]]) {
+            [navigationControllers removeObjectAtIndex:index];
+        }
+    }
+    [self.navigationController setViewControllers:navigationControllers animated:NO];
+}
+
+- (void)setCardForView {
+    ASGameCore *core = [ASSingleGameCore sharedInstance];
+    ASCard *card = [[core cards] objectAtIndex:viewCount];
+    BOOL showHint = [[core gameMode] showHintForCard:card];
+
+    [[self cardView] setCard:card];
+    [[self hintButton] setHidden:showHint];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,23 +71,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    viewCount++;
+    if ([[segue identifier] isEqualToString:@"GameCardSegue"] && viewCount >= [[[ASSingleGameCore sharedInstance] cards] count]) {
+        //All cards seen, move on.
+        UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"NumberGuessController"];
+        [self.navigationController pushViewController:controller animated:YES];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    } else {
+        [super prepareForSegue:segue sender:sender];
+    }
+
 }
-*/
+
 
 - (IBAction)dismissView {
     [self.navigationController popViewControllerAnimated:YES];
+    viewCount = 0;
 }
 
 - (IBAction)dismissToRoot {
     [self.navigationController popToRootViewControllerAnimated:YES];
+    viewCount = 0;
+
 }
 
 
