@@ -29,11 +29,12 @@ static int viewCount;
 
     if (viewCount == 0) {
         [self resetGame];
+    } else if (viewCount >= [[[ASSingleGameCore sharedInstance] cards] count]) {
+        [self setCardForView];
     } else {
         [self clearPreviousCardFromNavigationStack];
     }
 
-    [self setCardForView];
 }
 
 - (void)resetGame {
@@ -71,11 +72,16 @@ static int viewCount;
     // Dispose of any resources that can be recreated.
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:
+                         (id)sender {
     viewCount++;
     if ([[segue identifier] isEqualToString:@"GameCardSegue"] && viewCount >= [[[ASSingleGameCore sharedInstance] cards] count]) {
         //All cards seen, move on.
+        viewCount = 0;
+
         UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"NumberGuessController"];
+        [self.navigationController popToRootViewControllerAnimated:NO];
         [self.navigationController pushViewController:controller animated:YES];
 
     } else {

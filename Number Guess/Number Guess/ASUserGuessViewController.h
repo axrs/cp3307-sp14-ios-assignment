@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ASUserGuessViewController : UIViewController
+- (IBAction)dismissToRoot;
+
+- (IBAction)playAgain;
 
 @end
