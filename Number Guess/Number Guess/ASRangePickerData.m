@@ -1,72 +1,38 @@
 //
-//  ASDifficultyViewController.m
+//  ASRangePickerData.m
 //  Number Guess
 //
-//  Created by Alexander Scott on 26/05/2014.
+//  Created by Alexander Scott on 5/06/2014.
 //  Copyright (c) 2014 ITJCU Mobile Technology. All rights reserved.
 //
 
-#import "ASDifficultyViewController.h"
-#import "ASEasyGameDifficultyCommand.h"
-#import "ASMediumGameDifficultyCommand.h"
-#import "ASHardGameDifficultyCommand.h"
-#import "ASCustomGameDifficultyCommand.h"
+#import "ASRangePickerData.h"
 
-#if !defined(MAX)
-      #define MAX(A,B)((A)>(B) ? (A) : (B));
-#endif
-
-#if !defined(MIN)
-      #define MAX(A,B)((A)>(B) ? (A) : (B));
-#endif
-
-@interface ASDifficultyViewController () {
+@implementation ASRangePickerData {
     int _lowerRangeMax;
     int _maximum;
     int _selectedMinimum;
     int _selectedMaximum;
-
 }
-@end
 
-@implementation ASDifficultyViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (id)init {
+    self = [super init];
     if (self) {
-        // Custom initialization
+        _lowerRangeMax = 20;
+        _maximum = 100;
+        _selectedMinimum = 1;
+        _selectedMaximum = 2;
     }
+
     return self;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    _lowerRangeMax = 20;
-    _maximum = 100;
-    _selectedMinimum = 1;
-    _selectedMaximum = 2;
+- (int)selectedMaximum {
+    return _selectedMaximum;
 }
 
-- (IBAction)easyDifficultySelection:(UIView *)sender {
-    [[[ASEasyGameDifficultyCommand alloc] init] execute];
-}
-
-- (IBAction)mediumDifficultySelection:(UIView *)sender {
-    [[[ASMediumGameDifficultyCommand alloc] init] execute];
-
-}
-
-- (IBAction)hardDifficultySelection:(UIView *)sender {
-    [[[ASHardGameDifficultyCommand alloc] init] execute];
-
-}
-
-
-- (IBAction)customDifficultySelection:(UIView *)sender {
-    ASCustomGameDifficultyCommand *cmd = [[ASCustomGameDifficultyCommand alloc] init];
-    [cmd setMinimumValue:_selectedMinimum];
-    [cmd setMaximumValue:_selectedMaximum];
-    [cmd execute];
+- (int)selectedMinimum {
+    return _selectedMinimum;
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -95,7 +61,6 @@
         [label setShadowOffset:CGSizeMake(1, 1)];
         [label setTextAlignment:NSTextAlignmentCenter];
     }
-
 
     int value = 0;
 
@@ -129,6 +94,5 @@
             break;
     }
 }
-
 
 @end
