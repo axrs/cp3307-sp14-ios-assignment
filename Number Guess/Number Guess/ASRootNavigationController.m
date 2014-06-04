@@ -8,6 +8,7 @@
 
 #import "ASRootNavigationController.h"
 #import "OldStyleNavigationControllerAnimatedTransition.h"
+#import "ASAudioEngine.h"
 
 @interface ASRootNavigationController ()
 
@@ -42,6 +43,27 @@
     OldStyleNavigationControllerAnimatedTransition *anim = [[OldStyleNavigationControllerAnimatedTransition alloc] init];
     anim.operation = operation;
     return anim;
+}
+
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
+    if (animated) {
+        [ASAudioEngine playBackAudio];
+    }
+    return [super popViewControllerAnimated:animated];
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (animated) {
+        [ASAudioEngine playConfirmAudio];
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
+- (NSArray *)popToRootViewControllerAnimated:(BOOL)animated {
+    if (animated) {
+        [ASAudioEngine playBackAudio];
+    }
+    return [super popToRootViewControllerAnimated:animated];
 }
 
 
