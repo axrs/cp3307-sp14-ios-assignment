@@ -321,6 +321,7 @@
                                 </state>
                                 <connections>
                                     <action selector="customDifficultySelection:" destination="Bd8-ym-Kvd" eventType="touchUpInside" id="T8M-6V-SuP"/>
+                                    <segue destination="adR-aT-gAO" kind="push" id="sOe-Yj-Ccy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -373,7 +374,7 @@
                                     <action selector="dismissToRoot" destination="r5p-xe-0VP" eventType="touchUpInside" id="Cra-er-dn1"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corkboard_280_460.png" translatesAutoresizingMaskIntoConstraints="NO" id="RRF-eb-DeS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corkboard_280_160.png" translatesAutoresizingMaskIntoConstraints="NO" id="RRF-eb-DeS">
                                 <rect key="frame" x="20" y="20" width="280" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -387,7 +388,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VO-Fu-2QQ">
-                                <rect key="frame" x="20" y="188" width="280" height="48"/>
+                                <rect key="frame" x="20" y="356" width="280" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                 <state key="normal" title="Save" backgroundImage="buttonboard_280_48_right.png">
@@ -422,6 +423,10 @@
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trophy_golden.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kpf-5v-ayq">
+                                <rect key="frame" x="20" y="188" width="280" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -433,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4m9-KE-UcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2088" y="520"/>
+            <point key="canvasLocation" x="2064" y="479"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Zao-s2-ZAT">
@@ -516,12 +521,14 @@
         <image name="buttonboard_280_48_left.png" width="280" height="48"/>
         <image name="buttonboard_280_48_right.png" width="280" height="48"/>
         <image name="canvas_view.png" width="288" height="288"/>
+        <image name="corkboard_280_160.png" width="280" height="160"/>
         <image name="corkboard_280_460.png" width="280" height="230"/>
         <image name="corkboard_280_50.png" width="560" height="100"/>
         <image name="game_view.png" width="320" height="568"/>
         <image name="sign_left.png" width="64" height="64"/>
         <image name="sign_right.png" width="64" height="64"/>
         <image name="sign_tick.png" width="64" height="64"/>
+        <image name="trophy_golden.png" width="128" height="171"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -530,5 +537,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="k7d-Ub-lF5"/>
+        <segue reference="sOe-Yj-Ccy"/>
     </inferredMetricsTieBreakers>
 </document>
