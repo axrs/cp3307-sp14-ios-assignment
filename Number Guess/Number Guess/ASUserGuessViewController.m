@@ -10,7 +10,9 @@
 #import "ASSingleGameCore.h"
 
 @interface ASUserGuessViewController () {
-    UIFont *_font;
+    int _selected;
+    int _minimum;
+    int _maximum;
 }
 
 @end
@@ -20,28 +22,21 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+
     }
     return self;
 }
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    ASGameCore *core = [ASSingleGameCore sharedInstance];
+
+    _minimum = [core minimumValue];
+    _maximum = [core maximumValue];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (IBAction)dismissToRoot {
     [self.navigationController popToRootViewControllerAnimated:NO];
-}
-
-
-- (IBAction)playAgain {
-
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -49,9 +44,7 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    ASGameCore *core = [ASSingleGameCore sharedInstance];
-    int range = [core maximumValue] - [core minimumValue];
-    return range + 1;
+    return _maximum - _minimum + 1;
 }
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
@@ -66,11 +59,15 @@
         [label setTextAlignment:NSTextAlignmentCenter];
     }
 
-    ASGameCore *core = [ASSingleGameCore sharedInstance];
-    int value = [core minimumValue] + row;
+    int value = _minimum + row;
 
     label.text = [NSString stringWithFormat:@"%d", value];
     return label;
+}
+
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    _selected = _minimum + row;
 }
 
 

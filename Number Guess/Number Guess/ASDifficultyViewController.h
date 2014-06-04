@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASDifficultyViewController : UIViewController
+@interface ASDifficultyViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 - (IBAction)unwindToDifficultySelection:(UIStoryboardSegue *)sender;
 
@@ -17,5 +17,7 @@
 - (IBAction)mediumDifficultySelection:(UIView *)sender;
 
 - (IBAction)hardDifficultySelection:(UIView *)sender;
+
+- (IBAction)customDifficultySelection:(UIView *)sender;
 
 @end

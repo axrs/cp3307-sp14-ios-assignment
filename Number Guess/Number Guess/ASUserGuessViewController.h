@@ -10,7 +10,4 @@
 
 @interface ASUserGuessViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 - (IBAction)dismissToRoot;
-
-- (IBAction)playAgain;
-
 @end
