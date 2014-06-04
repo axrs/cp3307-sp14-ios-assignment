@@ -68,7 +68,7 @@
 - (IBAction)customDifficultySelection:(UIView *)sender {
     ASCustomGameDifficultyCommand *cmd = [[ASCustomGameDifficultyCommand alloc] init];
     [cmd setMinimumValue:_selectedMinimum];
-    [cmd setMaximumValue:_selectedMinimum];
+    [cmd setMaximumValue:_selectedMaximum];
     [cmd execute];
 }
 
