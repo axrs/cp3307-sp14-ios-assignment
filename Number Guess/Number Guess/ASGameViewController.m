@@ -9,12 +9,15 @@
 #import "ASGameViewController.h"
 #import "ASSingleGameCore.h"
 
-@interface ASGameViewController ()
+@interface ASGameViewController () {
+
+}
 
 @end
 
 @implementation ASGameViewController
 static int viewCount;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,11 +32,17 @@ static int viewCount;
 
     if (viewCount == 0) {
         [self resetGame];
-    } else if (viewCount >= [[[ASSingleGameCore sharedInstance] cards] count]) {
-        [self setCardForView];
-    } else {
-        [self clearPreviousCardFromNavigationStack];
     }
+
+    if (viewCount <= [[[ASSingleGameCore sharedInstance] cards] count]) {
+        [self setCardForView];
+    }
+
+    if (viewCount == [[[ASSingleGameCore sharedInstance] cards] count] - 1) {
+        [[self nextCardButton] setBackgroundImage:[UIImage imageNamed:@"sign_question.png"] forState:UIControlStateNormal];
+
+    }
+
 
 }
 
@@ -45,12 +54,11 @@ static int viewCount;
     //Remove the previous cards from the Navigation stack.
     NSMutableArray *navigationControllers = [[NSMutableArray alloc] initWithArray:self.navigationController.viewControllers];
 
-    //The total number of controlers to parse = count - current view
+    //The total number of controllers to parse = count - current view
     int index = [navigationControllers count] - 2;
     for (index; index > 0; index--) {
 
         NSObject *controller = [navigationControllers objectAtIndex:index];
-
         if ([self isKindOfClass:[controller class]]) {
             [navigationControllers removeObjectAtIndex:index];
         }
@@ -72,18 +80,15 @@ static int viewCount;
     // Dispose of any resources that can be recreated.
 }
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue
-                 sender:
-                         (id)sender {
+                 sender:(id)sender {
     viewCount++;
     if ([[segue identifier] isEqualToString:@"GameCardSegue"] && viewCount >= [[[ASSingleGameCore sharedInstance] cards] count]) {
         //All cards seen, move on.
         viewCount = 0;
-
-        UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"NumberGuessController"];
-        [self.navigationController popToRootViewControllerAnimated:NO];
-        [self.navigationController pushViewController:controller animated:YES];
-
+        [self clearPreviousCardFromNavigationStack];
+        [self performSegueWithIdentifier:@"UserGuessSegue" sender:self];
     } else {
         [super prepareForSegue:segue sender:sender];
     }

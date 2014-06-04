@@ -53,10 +53,11 @@
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    [super pushViewController:viewController animated:animated];
+
     if (animated) {
         [ASAudioEngine playConfirmAudio];
     }
-    [super pushViewController:viewController animated:animated];
 }
 
 - (NSArray *)popToRootViewControllerAnimated:(BOOL)animated {
@@ -65,6 +66,5 @@
     }
     return [super popToRootViewControllerAnimated:animated];
 }
-
 
 @end

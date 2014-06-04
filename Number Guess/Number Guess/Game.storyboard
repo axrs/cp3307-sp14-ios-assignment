@@ -198,7 +198,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hqu-0X-ANR" kind="push" identifier="GameCardSegue" id="Kp3-Vb-p0A"/>
+                                    <segue destination="hqu-0X-ANR" kind="push" identifier="GameCardSegue" id="95V-L4-JiG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -223,13 +223,13 @@
                         <outlet property="cardView" destination="BYy-75-elG" id="C6I-MH-w7G"/>
                         <outlet property="hintButton" destination="Q71-ad-COa" id="qCL-Bg-f29"/>
                         <outlet property="nextCardButton" destination="PVe-8Z-vrq" id="Dvf-d4-oIU"/>
+                        <segue destination="r5p-xe-0VP" kind="push" identifier="UserGuessSegue" id="jcN-hH-uJD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GH4-1c-vJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="SES-hN-P94">
                     <connections>
-                        <action selector="handleSwipeLeft:" destination="hqu-0X-ANR" id="dpO-Rs-h8R"/>
-                        <segue destination="hqu-0X-ANR" kind="push" identifier="GameCardSegue" id="CPw-il-ITF"/>
+                        <segue destination="hqu-0X-ANR" kind="push" identifier="GameCardSegue" id="uco-fu-PFb"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -263,7 +263,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="dismissToRoot" destination="r5p-xe-0VP" eventType="touchUpInside" id="HEw-9j-3mN"/>
+                                    <action selector="dismissToRoot" destination="r5p-xe-0VP" eventType="touchUpInside" id="Dg5-QP-SLi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -275,10 +275,11 @@
                             <constraint firstItem="sRh-oN-vNr" firstAttribute="leading" secondItem="Oer-W2-MxA" secondAttribute="leading" constant="20" symbolic="YES" id="sis-UN-arx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="g8X-kg-3Qb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wO0-z9-guS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1560" y="632"/>
+            <point key="canvasLocation" x="1560" y="554"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Zao-s2-ZAT">
