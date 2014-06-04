@@ -6,6 +6,9 @@
 #import "ASAudioEngine.h"
 
 @implementation ASAudioEngine {
+    SystemSoundID _confirmId;
+    SystemSoundID _transitionId;
+    SystemSoundID _backId;
 }
 
 
@@ -20,9 +23,33 @@ static dispatch_once_t predicate;
     return _sharedInstance;
 }
 
+
+- (id)init {
+    self = [super init];
+    if (self) {
+
+        //Init sound ids
+        NSBundle *main = [NSBundle mainBundle];
+
+        NSString *path = [main pathForResource:@"back" ofType:@"mp3"];
+        CFURLRef ref = (__bridge CFURLRef) [NSURL fileURLWithPath:path];
+        AudioServicesCreateSystemSoundID(ref, &_backId);
+
+        path = [main pathForResource:@"confirm" ofType:@"mp3"];
+        ref = (__bridge CFURLRef) [NSURL fileURLWithPath:path];
+        AudioServicesCreateSystemSoundID(ref, &_confirmId);
+
+        path = [main pathForResource:@"card_transition" ofType:@"mp3"];
+        ref = (__bridge CFURLRef) [NSURL fileURLWithPath:path];
+        AudioServicesCreateSystemSoundID(ref, &_transitionId);
+    }
+    return self;
+}
+
+
 - (AVAudioPlayer *)backgroundPlayer {
     if (_backgroundPlayer == nil) {
-        NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"lobbyMusic" ofType:@"mp3"];
+        NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"lobby" ofType:@"mp3"];
         NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:soundFilePath];
         _backgroundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
         _backgroundPlayer.numberOfLoops = -1;
@@ -39,15 +66,28 @@ static dispatch_once_t predicate;
 }
 
 + (void)playConfirmAudio {
-
+    [[ASAudioEngine sharedInstance] playConfirmAudio];
 }
 
-+ (void)playDeniedAudio {
-
++ (void)playBackAudio {
+    [[ASAudioEngine sharedInstance] playBackAudio];
 }
 
 + (void)playTransitionAudio {
+    [[ASAudioEngine sharedInstance] playTransitionAudio];
+}
 
+
+- (void)playConfirmAudio {
+    AudioServicesPlaySystemSound(_confirmId);
+}
+
+- (void)playBackAudio {
+    AudioServicesPlaySystemSound(_backId);
+}
+
+- (void)playTransitionAudio {
+    AudioServicesPlaySystemSound(_transitionId);
 }
 
 

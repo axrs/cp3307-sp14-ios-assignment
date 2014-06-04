@@ -8,9 +8,12 @@
 
 @interface ASAudioEngine : NSObject
 
-@property(nonatomic, strong) AVAudioPlayer *backgroundPlayer;
+@property(nonatomic, retain) AVAudioPlayer *backgroundPlayer;
+
 
 + (id)sharedInstance;
+
+- (id)init;
 
 + (void)startBackgroundAudio;
 
@@ -18,7 +21,13 @@
 
 + (void)playConfirmAudio;
 
-+ (void)playDeniedAudio;
+- (void)playConfirmAudio;
+
++ (void)playBackAudio;
+
+- (void)playBackAudio;
 
 + (void)playTransitionAudio;
+
+- (void)playTransitionAudio;
 @end
