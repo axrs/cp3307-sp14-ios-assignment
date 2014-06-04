@@ -74,7 +74,7 @@ const static int PREFERRED_RECT_WIDTH = 48;
     rows = (int) ceil(values / columns);
 
     _textBounds = CGRectMake(0, 0, (CGFloat) (viewWidth / columns), (CGFloat) (viewHeight / rows));
-    _fontSize = (CGFloat) ((viewHeight / rows) * 0.7);
+    _fontSize = (CGFloat) ((viewHeight / rows) * 0.5);
 }
 
 // Only override drawRect: if you perform custom drawing.
