@@ -14,6 +14,7 @@
 @property(weak, nonatomic) IBOutlet UIButton *hintButton;
 @property(weak, nonatomic) IBOutlet UIButton *nextCardButton;
 
+
 - (IBAction)dismissView;
 
 - (IBAction)dismissToRoot;

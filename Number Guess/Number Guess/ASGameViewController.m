@@ -8,6 +8,7 @@
 
 #import "ASGameViewController.h"
 #import "ASSingleGameCore.h"
+#import "ASRootNavigationController.h"
 
 @interface ASGameViewController () {
 
@@ -32,6 +33,9 @@ static int viewCount;
 
     if (viewCount == 0) {
         [self resetGame];
+        [self setInGame:YES];
+    } else {
+        [self clearPreviousCardFromNavigationStack];
     }
 
     if (viewCount <= [[[ASSingleGameCore sharedInstance] cards] count]) {
@@ -40,9 +44,7 @@ static int viewCount;
 
     if (viewCount == [[[ASSingleGameCore sharedInstance] cards] count] - 1) {
         [[self nextCardButton] setBackgroundImage:[UIImage imageNamed:@"sign_question.png"] forState:UIControlStateNormal];
-
     }
-
 
 }
 
@@ -80,30 +82,43 @@ static int viewCount;
     // Dispose of any resources that can be recreated.
 }
 
+- (void)setInGame:(BOOL)isInGame {
+    if ([self.navigationController isKindOfClass:[ASRootNavigationController class]]) {
+        ASRootNavigationController *controller = (ASRootNavigationController *) self.navigationController;
+        [controller setIsInGame:isInGame];
+    }
+}
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue
-                 sender:(id)sender {
-    viewCount++;
-    if ([[segue identifier] isEqualToString:@"GameCardSegue"] && viewCount >= [[[ASSingleGameCore sharedInstance] cards] count]) {
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+
+    if ([identifier isEqualToString:@"GameCardSegue"] && viewCount < [[[ASSingleGameCore sharedInstance] cards] count] - 1) {
+        //Game is still going. Allow showing next card
+        viewCount++;
+        return YES;
+    } else if (viewCount == [[[ASSingleGameCore sharedInstance] cards] count] - 1) {
         //All cards seen, move on.
         viewCount = 0;
-        [self clearPreviousCardFromNavigationStack];
+        [self setInGame:NO];
+        [[ASSingleGameCore sharedInstance] finished];
         [self performSegueWithIdentifier:@"UserGuessSegue" sender:self];
-    } else {
-        [super prepareForSegue:segue sender:sender];
+        return NO;
     }
-
+    return [identifier isEqualToString:@"UserGuessSegue"];
 }
 
 
 - (IBAction)dismissView {
     [self.navigationController popViewControllerAnimated:YES];
     viewCount = 0;
+    [self setInGame:NO];
+    NSLog(@"Dismiss");
 }
 
 - (IBAction)dismissToRoot {
     [self.navigationController popToRootViewControllerAnimated:YES];
     viewCount = 0;
+    [self setInGame:NO];
+    NSLog(@"Dismiss Root");
 
 }
 

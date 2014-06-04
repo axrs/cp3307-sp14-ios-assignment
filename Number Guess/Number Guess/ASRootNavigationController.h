@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ASRootNavigationController : UINavigationController <UINavigationControllerDelegate>
-
-
+@property(nonatomic,assign) BOOL isInGame;
 @end

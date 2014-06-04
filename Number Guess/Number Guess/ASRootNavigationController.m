@@ -11,7 +11,6 @@
 #import "ASAudioEngine.h"
 
 @interface ASRootNavigationController ()
-
 @end
 
 @implementation ASRootNavigationController
@@ -55,8 +54,10 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     [super pushViewController:viewController animated:animated];
 
-    if (animated) {
+    if (animated && !self.isInGame) {
         [ASAudioEngine playConfirmAudio];
+    } else if (animated) {
+        [ASAudioEngine playTransitionAudio];
     }
 }
 

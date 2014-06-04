@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASUserGuessViewController : UIViewController
+@interface ASUserGuessViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 - (IBAction)dismissToRoot;
 
 - (IBAction)playAgain;

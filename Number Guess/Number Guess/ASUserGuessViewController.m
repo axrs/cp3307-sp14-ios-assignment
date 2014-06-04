@@ -7,8 +7,11 @@
 //
 
 #import "ASUserGuessViewController.h"
+#import "ASSingleGameCore.h"
 
-@interface ASUserGuessViewController ()
+@interface ASUserGuessViewController () {
+    UIFont *_font;
+}
 
 @end
 
@@ -34,6 +37,40 @@
 
 - (IBAction)dismissToRoot {
     [self.navigationController popToRootViewControllerAnimated:NO];
+}
+
+
+- (IBAction)playAgain {
+
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    ASGameCore *core = [ASSingleGameCore sharedInstance];
+    int range = [core maximumValue] - [core minimumValue];
+    return range + 1;
+}
+
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+    UILabel *label = (UILabel *) view;
+
+    if (label == nil) {
+        label = [[UILabel alloc] init];
+        [label setFont:[UIFont fontWithName:@"CMFreshPaint" size:20]];
+        [label setTextColor:[UIColor whiteColor]];
+        [label setShadowColor:[UIColor blackColor]];
+        [label setShadowOffset:CGSizeMake(1, 1)];
+        [label setTextAlignment:NSTextAlignmentCenter];
+    }
+
+    ASGameCore *core = [ASSingleGameCore sharedInstance];
+    int value = [core minimumValue] + row;
+
+    label.text = [NSString stringWithFormat:@"%d", value];
+    return label;
 }
 
 
