@@ -24,7 +24,7 @@
 
 
 - (void)setMinimumValue:(int)value; {
-    _maximumValue = value;
+    _minimumValue = value;
 }
 
 - (void)setMaximumValue:(int)value; {
