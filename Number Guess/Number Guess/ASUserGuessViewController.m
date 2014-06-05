@@ -10,6 +10,10 @@
 #import "ASSingleGameCore.h"
 #import "ASTypeFaceFactory.h"
 
+/**
+User Guess View Controller overlooks how the user is able to select a value to use as their
+guess for the previous played game round
+*/
 @interface ASUserGuessViewController () {
     int _selected;
     int _minimum;
