@@ -11,6 +11,8 @@
 
 }
 
+
+
 - (void)execute {
     ASGameCore *instance = [ASSingleGameCore sharedInstance];
     ASBinaryGameKeyGenerator *generator = [[ASBinaryGameKeyGenerator alloc] init];
