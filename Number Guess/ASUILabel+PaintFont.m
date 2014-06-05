@@ -9,31 +9,23 @@
 #import "ASUILabel+PaintFont.h"
 #import "ASTypeFaceFactory.h"
 
+/** UILabel sub-class pre-configured to use a default app wide (non-system) font
+
+*/
 @implementation ASUILabel
 
-- (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
+/**---------------------------------------------------------------------------------------
+* @name awakeFromNib
+*  ---------------------------------------------------------------------------------------
+*/
 
+/** Configures the UILabel instance to use the default app font prior to display
+
+*/
 - (void)awakeFromNib {
     [super awakeFromNib];
     CGFloat fontSize = self.font.pointSize;
 
     self.font = [[ASTypeFaceFactory defaultTypeFace] fontWithSize:fontSize];
 }
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
 @end

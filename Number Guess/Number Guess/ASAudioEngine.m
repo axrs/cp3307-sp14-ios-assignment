@@ -14,11 +14,9 @@
     SystemSoundID _backId;
 }
 
-
 static ASAudioEngine *_sharedInstance = nil;
 
 static dispatch_once_t predicate;
-
 
 /**---------------------------------------------------------------------------------------
 * @name sharedInstance

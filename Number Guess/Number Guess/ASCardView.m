@@ -8,6 +8,10 @@
 
 #import "ASCardView.h"
 
+/** Graphically represents a Card object (values) within the constrained view bounds
+adhering to a calculated grid system.  Displayed values are rendered using the default
+app font.
+*/
 @implementation ASCardView {
     CGRect _textBounds;
     CGFloat _fontSize;
@@ -18,6 +22,18 @@ const static int PADDING = 20;
 const static int PREFERRED_RECT_WIDTH = 48;
 
 @synthesize card = _card;
+
+
+/**---------------------------------------------------------------------------------------
+* @name initWithFrame
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Initialises the card view defining the overall edge to edge dimensions
+
+@param frame
+@return Initialised Card View
+*/
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -30,6 +46,15 @@ const static int PREFERRED_RECT_WIDTH = 48;
 }
 
 
+/**---------------------------------------------------------------------------------------
+* @name paintAttributes
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Gets paint attributes for the rendering individual card values
+
+@return Text rendering options configured for this card view instance
+*/
 - (NSMutableDictionary *)paintAttributes {
     if (numberPaintAttributes == nil) {
         UIFont *font = [UIFont fontWithName:@"CMFreshPaint" size:_fontSize];
@@ -49,11 +74,30 @@ const static int PREFERRED_RECT_WIDTH = 48;
 }
 
 
+
+/**---------------------------------------------------------------------------------------
+* @name setCard
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Sets a reference to the Card for the view to display
+
+@param card Card instance to render
+*/
 - (void)setCard:(ASCard *)card {
     _card = card;
     [self calculateTextRectSize];
 }
 
+
+/**---------------------------------------------------------------------------------------
+* @name calculatesTextRectSize
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Calculates a maximum bounds for each card value to render within
+
+*/
 - (void)calculateTextRectSize {
 
     double values = [[[self card] values] count] + 0.0;
@@ -77,8 +121,15 @@ const static int PREFERRED_RECT_WIDTH = 48;
     _fontSize = (CGFloat) ((viewHeight / rows) * 0.5);
 }
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+/**---------------------------------------------------------------------------------------
+* @name drawRect
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Renders the card values within the specified region
+*
+@param rect Renderable extent to draw within
+*/
 - (void)drawRect:(CGRect)rect {
     int left = PADDING;
     int top = PADDING;
