@@ -7,8 +7,8 @@
 #import "ASSingleGameCore.h"
 #import "ASBinaryGameKeyGenerator.h"
 
-/**
-* Binary Game Key Configuration Command
+/** Binary Game Key Configuration Command
+
 */
 @implementation ASBinaryGameSequenceCommand {
 

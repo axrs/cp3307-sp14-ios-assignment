@@ -6,8 +6,8 @@
 #import "ASEasyGameDifficultyCommand.h"
 #import "ASSingleGameCore.h"
 
-/**
-* Easy Game Difficulty Configuration Command
+/** Easy Game Difficulty Configuration Command
+
 */
 @implementation ASEasyGameDifficultyCommand {
 

@@ -7,8 +7,8 @@
 
 #import "ASSingleGameCore.h"
 
-/**
-* Hard Game Difficulty Configuration Command
+/** Hard Game Difficulty Configuration Command
+
 */
 @implementation ASHardGameDifficultyCommand {
 

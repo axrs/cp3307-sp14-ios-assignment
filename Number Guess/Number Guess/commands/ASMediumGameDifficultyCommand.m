@@ -6,8 +6,8 @@
 #import "ASMediumGameDifficultyCommand.h"
 #import "ASSingleGameCore.h"
 
-/**
-* Medium Game Difficulty Configuration Command
+/** Medium Game Difficulty Configuration Command
+
 */
 @implementation ASMediumGameDifficultyCommand {
 
@@ -20,7 +20,7 @@
 */
 
 /** Executes the command configuring the game difficulty to an medium difficulty (moderate
-    range of values)
+range of values)
 
 */
 - (void)execute {

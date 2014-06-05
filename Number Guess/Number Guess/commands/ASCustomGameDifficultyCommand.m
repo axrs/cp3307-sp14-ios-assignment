@@ -7,8 +7,8 @@
 #import "ASSingleGameCore.h"
 
 
-/**
-* Custom Game Difficulty Selection Command
+/** Custom Game Difficulty Selection Command
+
 */
 @implementation ASCustomGameDifficultyCommand {
 @private
