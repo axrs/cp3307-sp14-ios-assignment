@@ -321,7 +321,6 @@
                                 </state>
                                 <connections>
                                     <action selector="customDifficultySelection:" destination="Bd8-ym-Kvd" eventType="touchUpInside" id="T8M-6V-SuP"/>
-                                    <segue destination="adR-aT-gAO" kind="push" id="sOe-Yj-Ccy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -343,11 +342,71 @@
                     <navigationItem key="navigationItem" id="g8X-kg-3Qb"/>
                     <connections>
                         <segue destination="adR-aT-gAO" kind="push" identifier="UserWinSegue" id="HZf-nR-ZQW"/>
+                        <segue destination="yS0-JH-Gbz" kind="push" identifier="UserLostSegue" id="eX9-gj-3qW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wO0-z9-guS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1560" y="520"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UJr-tG-g7w">
+            <objects>
+                <viewController id="yS0-JH-Gbz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vbc-lh-3Xh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccy-Kd-z5N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IDG-bI-ZsD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corkboard_280_160.png" translatesAutoresizingMaskIntoConstraints="NO" id="bGp-f5-Jdo">
+                                <rect key="frame" x="20" y="20" width="280" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My secret value was too illusive for you. Better luck next time!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="234" translatesAutoresizingMaskIntoConstraints="NO" id="whv-Rw-e2V" customClass="ASUILabel">
+                                <rect key="frame" x="43" y="34" width="234" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="ZGd-HA-S7W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kua-uO-ICi" customClass="ASUIButton">
+                                <rect key="frame" x="20" y="412" width="280" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Home" backgroundImage="buttonboard_280_48_left.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissToRoot" destination="r5p-xe-0VP" eventType="touchUpInside" id="JAS-Pj-dd0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bGp-f5-Jdo" firstAttribute="leading" secondItem="IDG-bI-ZsD" secondAttribute="leading" constant="20" symbolic="YES" id="5yv-0c-sp7"/>
+                            <constraint firstItem="bGp-f5-Jdo" firstAttribute="top" secondItem="IDG-bI-ZsD" secondAttribute="top" constant="20" symbolic="YES" id="M4l-vY-gg9"/>
+                            <constraint firstAttribute="bottom" secondItem="kua-uO-ICi" secondAttribute="bottom" constant="20" symbolic="YES" id="RmP-qK-Z0L"/>
+                            <constraint firstItem="whv-Rw-e2V" firstAttribute="top" secondItem="Vbc-lh-3Xh" secondAttribute="bottom" constant="14" id="UMQ-Tw-c9A"/>
+                            <constraint firstItem="whv-Rw-e2V" firstAttribute="leading" secondItem="IDG-bI-ZsD" secondAttribute="leading" constant="43" id="VhS-uV-qK7"/>
+                            <constraint firstItem="kua-uO-ICi" firstAttribute="leading" secondItem="bGp-f5-Jdo" secondAttribute="leading" id="bSt-rt-Mdd"/>
+                            <constraint firstItem="whv-Rw-e2V" firstAttribute="centerX" secondItem="bGp-f5-Jdo" secondAttribute="centerX" id="ciK-1h-qPz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="e5Q-xd-iBs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZj-g8-ACJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028" y="819"/>
         </scene>
         <!--User Win View Controller-->
         <scene sceneID="wLB-1H-ArI">
@@ -372,6 +431,7 @@
                                 </state>
                                 <connections>
                                     <action selector="dismissToRoot" destination="r5p-xe-0VP" eventType="touchUpInside" id="Cra-er-dn1"/>
+                                    <action selector="dismissToRoot" destination="adR-aT-gAO" eventType="touchUpInside" id="HOm-v6-Hnm"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="corkboard_280_160.png" translatesAutoresizingMaskIntoConstraints="NO" id="RRF-eb-DeS">
@@ -442,7 +502,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4m9-KE-UcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064" y="479"/>
+            <point key="canvasLocation" x="2028" y="199"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Zao-s2-ZAT">
@@ -457,7 +517,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="241-Lu-qdo" customClass="ASUIButton">
-                                <rect key="frame" x="20" y="160" width="280" height="48"/>
+                                <rect key="frame" x="20" y="188" width="280" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -470,21 +530,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtb-fU-Lt6" customClass="ASUIButton">
-                                <rect key="frame" x="20" y="216" width="280" height="48"/>
+                                <rect key="frame" x="20" y="244" width="280" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Highscores" backgroundImage="buttonboard_280_48.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbL-if-m4b" customClass="ASUIButton">
-                                <rect key="frame" x="20" y="272" width="280" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Options" backgroundImage="buttonboard_280_48.png">
+                                <state key="normal" title="Highscores" backgroundImage="buttonboard_280_48_right.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -521,7 +571,6 @@
     <resources>
         <image name="arrow_left.png" width="22" height="19"/>
         <image name="arrow_left_invert.png" width="22" height="19"/>
-        <image name="buttonboard_280_48.png" width="280" height="48"/>
         <image name="buttonboard_280_48_left.png" width="280" height="48"/>
         <image name="buttonboard_280_48_right.png" width="280" height="48"/>
         <image name="canvas_view.png" width="288" height="288"/>
@@ -541,6 +590,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="k7d-Ub-lF5"/>
-        <segue reference="sOe-Yj-Ccy"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -27,6 +27,7 @@
 		C0A00D6F194021D90003A7D5 /* ASUILabel+PaintFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A00D6E194021D90003A7D5 /* ASUILabel+PaintFont.m */; };
 		C0A00D74194023B80003A7D5 /* ASUIButton+PaintFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A00D73194023B80003A7D5 /* ASUIButton+PaintFont.m */; };
 		C0A00D77194026010003A7D5 /* ASUserWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A00D76194026010003A7D5 /* ASUserWinViewController.m */; };
+		C0A00D7A194028930003A7D5 /* ASUserLostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A00D79194028930003A7D5 /* ASUserLostViewController.m */; };
 		C0A1E940192D6E4D00B4384D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E93F192D6E4D00B4384D /* Foundation.framework */; };
 		C0A1E942192D6E4D00B4384D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E941192D6E4D00B4384D /* CoreGraphics.framework */; };
 		C0A1E944192D6E4D00B4384D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E943192D6E4D00B4384D /* UIKit.framework */; };
@@ -132,6 +133,8 @@
 		C0A00D73194023B80003A7D5 /* ASUIButton+PaintFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASUIButton+PaintFont.m"; sourceTree = "<group>"; };
 		C0A00D75194026010003A7D5 /* ASUserWinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUserWinViewController.h; sourceTree = "<group>"; };
 		C0A00D76194026010003A7D5 /* ASUserWinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUserWinViewController.m; sourceTree = "<group>"; };
+		C0A00D78194028930003A7D5 /* ASUserLostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUserLostViewController.h; sourceTree = "<group>"; };
+		C0A00D79194028930003A7D5 /* ASUserLostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUserLostViewController.m; sourceTree = "<group>"; };
 		C0A1E93C192D6E4D00B4384D /* Number Guess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Guess.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A1E93F192D6E4D00B4384D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0A1E941192D6E4D00B4384D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -299,6 +302,8 @@
 				C0A5554C193BECFE0002DE57 /* ASRootNavigationController.m */,
 				C0A00D75194026010003A7D5 /* ASUserWinViewController.h */,
 				C0A00D76194026010003A7D5 /* ASUserWinViewController.m */,
+				C0A00D78194028930003A7D5 /* ASUserLostViewController.h */,
+				C0A00D79194028930003A7D5 /* ASUserLostViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -643,6 +648,7 @@
 				D24FF1F1AE0839B8FB95DDDB /* ASCard.m in Sources */,
 				D24FFFBCFA13A793D58FE473 /* ASBinaryGameKeyGenerator.m in Sources */,
 				C0A00D74194023B80003A7D5 /* ASUIButton+PaintFont.m in Sources */,
+				C0A00D7A194028930003A7D5 /* ASUserLostViewController.m in Sources */,
 				D24FF28539B09868DB012483 /* ASStandardGameMode.m in Sources */,
 				D24FF65374F8B49D146BCFD9 /* ASBasicScoreTracker.m in Sources */,
 				C0A5554D193BECFE0002DE57 /* ASRootNavigationController.m in Sources */,
