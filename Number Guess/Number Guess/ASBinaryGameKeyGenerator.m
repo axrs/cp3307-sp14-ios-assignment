@@ -16,7 +16,6 @@
     if (self) {
         _maximumValue = maximumValue;
     }
-
     return self;
 }
 

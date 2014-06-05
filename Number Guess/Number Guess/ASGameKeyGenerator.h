@@ -21,6 +21,7 @@ Defines implementation methodology for assigning values to individual cards.
 /** Initialises the Generator with a given maximum range.
 
 @param value Maximum value required to generate
+@return Initialised Generator
 */
 - (id)initWithMaximumValue:(int)value;
 
