@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASUserWinViewController : UIViewController
+@interface ASUserWinViewController : UIViewController <UITextFieldDelegate>
 
 @property(nonatomic, weak) IBOutlet UITextField *nameField;
 @property(nonatomic, weak) IBOutlet UILabel *scoreLabel;
+
 - (IBAction)dismissToRoot;
 
 @end

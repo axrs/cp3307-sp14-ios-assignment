@@ -39,7 +39,7 @@
 
 - (BOOL)containsValue:(int)value {
     for (NSNumber *i in [self values]) {
-        if (i == [NSNumber numberWithInteger:value]) {
+        if ([i isEqualToNumber:[NSNumber numberWithInteger:value]]) {
             return YES;
         }
     }

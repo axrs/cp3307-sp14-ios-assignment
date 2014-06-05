@@ -32,8 +32,14 @@ static NSString *_userName;
     return _userName;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)sender {
+    [sender resignFirstResponder];
+    return YES;
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
+    [super touchesBegan:touches withEvent:event];
 }
 
 - (IBAction)dismissToRoot {

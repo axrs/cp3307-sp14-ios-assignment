@@ -74,7 +74,7 @@ static int viewCount;
     BOOL showHint = [[core gameMode] showHintForCard:card];
 
     [[self cardView] setCard:card];
-    [[self hintButton] setHidden:showHint];
+    [[self hintButton] setHidden:!showHint];
 }
 
 - (void)didReceiveMemoryWarning {
