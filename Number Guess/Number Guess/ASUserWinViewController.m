@@ -8,6 +8,7 @@
 
 #import "ASUserWinViewController.h"
 #import "ASSingleGameCore.h"
+#import "ASHighScoreDAO.h"
 
 @interface ASUserWinViewController ()
 
@@ -25,11 +26,15 @@ static NSString *_userName;
 }
 
 
-- (NSString *)userName {
++ (NSString *)userName {
     if (_userName == nil) {
         _userName = [[NSString alloc] init];
     }
     return _userName;
+}
+
++ (void)setUserName:(NSString *)name {
+    _userName = name;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)sender {
@@ -50,13 +55,19 @@ static NSString *_userName;
     ASGameCore *core = [ASSingleGameCore sharedInstance];
 
     [[self scoreLabel] setText:[NSString stringWithFormat:@"%ld", [core score]]];
-    [[self nameField] setText:[self userName]];
+    [[self nameField] setText:[ASUserWinViewController userName]];
 }
 
+- (IBAction)submitScore {
+    [ASUserWinViewController setUserName:[[self nameField] text]];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (![[ASUserWinViewController userName] isEqualToString:@""]) {
+        [[ASHighScoreDAO sharedInstance] createHighScoreFor:[ASUserWinViewController userName]
+                                                  WithScore:[[ASSingleGameCore sharedInstance] score]];
+        [self.navigationController popToRootViewControllerAnimated:NO];
+    }
+
 }
+
 
 @end

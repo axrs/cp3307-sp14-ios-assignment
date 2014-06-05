@@ -15,4 +15,6 @@
 
 - (IBAction)dismissToRoot;
 
+- (IBAction)submitScore;
+
 @end
