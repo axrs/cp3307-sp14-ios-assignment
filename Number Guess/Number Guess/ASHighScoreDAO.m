@@ -17,6 +17,16 @@
 static ASHighScoreDAO *_sharedInstance = nil;
 static dispatch_once_t predicate;
 
+
+/**---------------------------------------------------------------------------------------
+* @name sharedInstance
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Gets the current instance of the HighScores CoreData Access Object
+
+@return Shared ASHighScoreDAO instance
+*/
 + (id)sharedInstance {
     dispatch_once(&predicate, ^{
         _sharedInstance = [[ASHighScoreDAO alloc] init];
@@ -24,6 +34,15 @@ static dispatch_once_t predicate;
     return _sharedInstance;
 }
 
+/**---------------------------------------------------------------------------------------
+* @name all
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Gets an array of all HighScores stored within the CoreData database
+
+@return All known HighScores (Descending by Score)
+*/
 - (NSArray *)all {
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"HighScore"
@@ -42,6 +61,14 @@ static dispatch_once_t predicate;
     return records;
 }
 
+/**---------------------------------------------------------------------------------------
+* @name createHighScoreFor WithScore
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Creates a HighScore entry within CoreData for a specified user achieving a given score
+
+*/
 - (void)createHighScoreFor:(NSString *)user WithScore:(long)score {
 
     NSManagedObject *scoreEntry;
@@ -55,6 +82,7 @@ static dispatch_once_t predicate;
     [self saveContext];
 }
 
+#pragma mark - Unaltered XCode Generated AppDelegate Methods
 
 - (void)saveContext {
     NSError *error = nil;

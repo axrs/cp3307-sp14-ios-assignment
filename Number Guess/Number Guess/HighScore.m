@@ -9,6 +9,9 @@
 #import "HighScore.h"
 
 
+/** XCode generated class representing CoreData model for a HighScore object
+
+*/
 @implementation HighScore
 
 @dynamic name;
