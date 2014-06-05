@@ -6,6 +6,10 @@
 #import "ASStandardGameMode.h"
 
 
+/** Standard Guessing Game Mode
+
+Defines the standard methodology to play the number guessing game
+*/
 @implementation ASStandardGameMode {
 @private
     int _minimumValue;
@@ -19,15 +23,21 @@
     [self reset];
 }
 
+/**---------------------------------------------------------------------------------------
+* @name reset
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Resets the game mode generating a new secret value
+
+*/
 - (void)reset {
     _secret = arc4random() % (_maximumValue - _minimumValue) + _minimumValue;
-    NSLog(@"Secret Number Is: %d", _secret);
 }
 
 - (int)secret {
     return _secret;
 }
-
 
 - (BOOL)valueIsSecret:(int)value {
     return (_secret == value);

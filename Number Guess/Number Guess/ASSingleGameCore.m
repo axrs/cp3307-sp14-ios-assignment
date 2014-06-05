@@ -5,7 +5,8 @@
 
 #import "ASSingleGameCore.h"
 
-
+/** Singleton Wrapper for the core game object to preserve instance app wide
+*/
 @implementation ASSingleGameCore {
 
 }
@@ -13,6 +14,15 @@ static ASGameCore *_sharedInstance = nil;
 
 static dispatch_once_t predicate;
 
+/**---------------------------------------------------------------------------------------
+* @name sharedInstance
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Gets the current instance of the GameCore
+
+@return Shared GameCore instance
+*/
 + (ASGameCore *)sharedInstance {
     dispatch_once(&predicate, ^{
         _sharedInstance = [[ASGameCore alloc] initWithRangeFrom:1 To:10];

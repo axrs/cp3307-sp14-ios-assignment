@@ -9,7 +9,8 @@
 
 /** Number Guessing Game Mode
 
-Defines the skeletal structure for implementing a new game mode for use with the Number Guessing Game/
+Defines the skeletal structure for implementing a new game mode for use with the Number
+Guessing Game
 
 */
 @protocol ASGameMode <NSObject>
@@ -38,7 +39,6 @@ Defines the skeletal structure for implementing a new game mode for use with the
 */
 - (void)reset;
 
-
 /**---------------------------------------------------------------------------------------
 * @name secret
 *  ---------------------------------------------------------------------------------------
@@ -48,6 +48,7 @@ Defines the skeletal structure for implementing a new game mode for use with the
 
 */
 - (int)secret;
+
 /**---------------------------------------------------------------------------------------
 * @name valueIsSecret
 *  ---------------------------------------------------------------------------------------
