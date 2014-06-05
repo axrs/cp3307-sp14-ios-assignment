@@ -349,10 +349,10 @@
             </objects>
             <point key="canvasLocation" x="1560" y="520"/>
         </scene>
-        <!--View Controller-->
+        <!--User Win View Controller-->
         <scene sceneID="wLB-1H-ArI">
             <objects>
-                <viewController id="adR-aT-gAO" sceneMemberID="viewController">
+                <viewController id="adR-aT-gAO" customClass="ASUserWinViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ARk-az-9DY"/>
                         <viewControllerLayoutGuide type="bottom" id="MIc-Cr-TDt"/>
@@ -435,6 +435,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Sr1-qd-6lc"/>
+                    <connections>
+                        <outlet property="nameField" destination="9HO-Vw-NOB" id="sqm-VX-zbW"/>
+                        <outlet property="scoreLabel" destination="zIf-hn-MvM" id="LbF-SI-bWo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4m9-KE-UcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

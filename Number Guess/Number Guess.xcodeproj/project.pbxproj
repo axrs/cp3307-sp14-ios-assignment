@@ -26,6 +26,7 @@
 		C09F3B19193312CE009BBE1C /* ASGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C09F3B18193312CE009BBE1C /* ASGameViewController.m */; };
 		C0A00D6F194021D90003A7D5 /* ASUILabel+PaintFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A00D6E194021D90003A7D5 /* ASUILabel+PaintFont.m */; };
 		C0A00D74194023B80003A7D5 /* ASUIButton+PaintFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A00D73194023B80003A7D5 /* ASUIButton+PaintFont.m */; };
+		C0A00D77194026010003A7D5 /* ASUserWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A00D76194026010003A7D5 /* ASUserWinViewController.m */; };
 		C0A1E940192D6E4D00B4384D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E93F192D6E4D00B4384D /* Foundation.framework */; };
 		C0A1E942192D6E4D00B4384D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E941192D6E4D00B4384D /* CoreGraphics.framework */; };
 		C0A1E944192D6E4D00B4384D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1E943192D6E4D00B4384D /* UIKit.framework */; };
@@ -129,6 +130,8 @@
 		C0A00D6E194021D90003A7D5 /* ASUILabel+PaintFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ASUILabel+PaintFont.m"; path = "../ASUILabel+PaintFont.m"; sourceTree = "<group>"; };
 		C0A00D72194023B80003A7D5 /* ASUIButton+PaintFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASUIButton+PaintFont.h"; sourceTree = "<group>"; };
 		C0A00D73194023B80003A7D5 /* ASUIButton+PaintFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASUIButton+PaintFont.m"; sourceTree = "<group>"; };
+		C0A00D75194026010003A7D5 /* ASUserWinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUserWinViewController.h; sourceTree = "<group>"; };
+		C0A00D76194026010003A7D5 /* ASUserWinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUserWinViewController.m; sourceTree = "<group>"; };
 		C0A1E93C192D6E4D00B4384D /* Number Guess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Guess.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A1E93F192D6E4D00B4384D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0A1E941192D6E4D00B4384D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -294,6 +297,8 @@
 				D24FFE6DF52610733A52D1CA /* ASHomeViewController.m */,
 				C0A5554B193BECFE0002DE57 /* ASRootNavigationController.h */,
 				C0A5554C193BECFE0002DE57 /* ASRootNavigationController.m */,
+				C0A00D75194026010003A7D5 /* ASUserWinViewController.h */,
+				C0A00D76194026010003A7D5 /* ASUserWinViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -648,6 +653,7 @@
 				C0D7916C193C118C00B756D1 /* ASUserGuessViewController.m in Sources */,
 				D24FF253861D687C31E454DF /* ASEasyGameDifficultyCommand.m in Sources */,
 				D24FFE6BD8D6E4212CCCDA1C /* ASMediumGameDifficultyCommand.m in Sources */,
+				C0A00D77194026010003A7D5 /* ASUserWinViewController.m in Sources */,
 				D24FF77CD53F9C9FBC96B7B6 /* ASHardGameDifficultyCommand.m in Sources */,
 				D24FFBCEC70CC79A706478DE /* ASCustomGameDifficultyCommand.m in Sources */,
 				C09F3B0219330997009BBE1C /* ASDifficultyViewController.m in Sources */,
