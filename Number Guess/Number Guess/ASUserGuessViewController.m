@@ -32,6 +32,7 @@
 
 - (void)viewDidLoad {
     ASGameCore *core = [ASSingleGameCore sharedInstance];
+    _selected = [core minimumValue];
     _minimum = [core minimumValue];
     _maximum = [core maximumValue];
 }
@@ -75,6 +76,7 @@
 
 - (IBAction)submitGuess {
     ASGameCore *core = [ASSingleGameCore sharedInstance];
+    NSLog(@"%d", _selected);
     if ([[core gameMode] valueIsSecret:_selected]) {
         [self performSegueWithIdentifier:@"UserWinSegue" sender:self];
     } else {
