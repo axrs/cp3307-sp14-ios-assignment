@@ -85,6 +85,7 @@
 		D24FF412A314627A405ACE47 /* ASBinaryGameKeyGeneratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFC00B986F60ED18ECFE4 /* ASBinaryGameKeyGeneratorTest.m */; };
 		D24FF4AE9683B70B11D39118 /* ASStandardGameModeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF496E6D0F93433933EED /* ASStandardGameModeTest.m */; };
 		D24FF5304D9B5254CF512ECF /* ASGameCoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF573F97F87F7BB129BA8 /* ASGameCoreTest.m */; };
+		D24FF5E789E31DCE92533C88 /* ASHighScoreDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFF5BE9CA6A03A7BBC529 /* ASHighScoreDAO.m */; };
 		D24FF65374F8B49D146BCFD9 /* ASBasicScoreTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF1F66FCFA64260B320C6 /* ASBasicScoreTracker.m */; };
 		D24FF77CD53F9C9FBC96B7B6 /* ASHardGameDifficultyCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FF622CE0D43C9F01D3088 /* ASHardGameDifficultyCommand.m */; };
 		D24FFA454AC1079D6BA2568E /* ASBasicScoreTrackerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */; };
@@ -204,6 +205,7 @@
 		D24FF48F4DDC7BB722CB33BB /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Command.h; path = ../Command.h; sourceTree = "<group>"; };
 		D24FF496E6D0F93433933EED /* ASStandardGameModeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStandardGameModeTest.m; sourceTree = "<group>"; };
 		D24FF573F97F87F7BB129BA8 /* ASGameCoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGameCoreTest.m; sourceTree = "<group>"; };
+		D24FF5ADC8E3BEDB9D19314E /* ASHighScoreDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHighScoreDAO.h; sourceTree = "<group>"; };
 		D24FF5DD64189A99D5330541 /* ASGameScoreTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGameScoreTracker.h; sourceTree = "<group>"; };
 		D24FF622CE0D43C9F01D3088 /* ASHardGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHardGameDifficultyCommand.m; sourceTree = "<group>"; };
 		D24FF63D70DE4B94E22B73A0 /* ASCustomGameDifficultyCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCustomGameDifficultyCommand.m; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 		D24FFE6DF52610733A52D1CA /* ASHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHomeViewController.m; sourceTree = "<group>"; };
 		D24FFEF69A3784BF4E4F0816 /* ASStandardGameMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASStandardGameMode.h; sourceTree = "<group>"; };
 		D24FFF195DE27AB6C4BAB27A /* ASBasicScoreTrackerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBasicScoreTrackerTest.m; sourceTree = "<group>"; };
+		D24FFF5BE9CA6A03A7BBC529 /* ASHighScoreDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHighScoreDAO.m; sourceTree = "<group>"; };
 		D24FFFC6368DBED22F65EE59 /* ASHardGameDifficultyCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHardGameDifficultyCommand.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -358,6 +361,8 @@
 				D24FF0F33B1523C621F8E658 /* OldStyleNavigationControllerAnimatedTransition.h */,
 				D24FFD685DC033BF8F800137 /* OldStyleNavigationControllerAnimatedTransition.m */,
 				C0A1E948192D6E4D00B4384D /* Supporting Files */,
+				D24FFF5BE9CA6A03A7BBC529 /* ASHighScoreDAO.m */,
+				D24FF5ADC8E3BEDB9D19314E /* ASHighScoreDAO.h */,
 			);
 			path = "Number Guess";
 			sourceTree = "<group>";
@@ -669,6 +674,7 @@
 				D24FFD339A184F7B4A920B2D /* OldStyleNavigationControllerAnimatedTransition.m in Sources */,
 				D24FF36D9CE91D194ACBE8D7 /* ASAudioEngine.m in Sources */,
 				D24FFCF1B8AFF02573BC1866 /* ASTypeFaceFactory.m in Sources */,
+				D24FF5E789E31DCE92533C88 /* ASHighScoreDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
