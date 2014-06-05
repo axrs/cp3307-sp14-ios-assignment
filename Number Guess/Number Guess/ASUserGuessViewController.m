@@ -20,15 +20,14 @@
 
 @implementation ASUserGuessViewController
 
+/**---------------------------------------------------------------------------------------
+* @name viewDidLoad
+*  ---------------------------------------------------------------------------------------
+*/
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+/** Initialises the PickerView data source after the view as loaded
 
-    }
-    return self;
-}
-
+*/
 
 - (void)viewDidLoad {
     ASGameCore *core = [ASSingleGameCore sharedInstance];
@@ -37,19 +36,63 @@
     _maximum = [core maximumValue];
 }
 
+/**---------------------------------------------------------------------------------------
+* @name dismissToRoot
+*  ---------------------------------------------------------------------------------------
+*/
 
+/** Dismisses the current Game Card back to the root view/home screen
+
+@return IBAction
+*/
 - (IBAction)dismissToRoot {
     [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
+/**---------------------------------------------------------------------------------------
+* @name numberOfComponentsInPickerView
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Gets the intended number of components to be displayed within the custom range picker
+
+@param pickerView Picker View to determine which data source to use
+@return One component, range of values used in the game
+*/
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return 1;
 }
 
+/**---------------------------------------------------------------------------------------
+* @name pickerView numberOfRowsInComponent
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Gets the intended number of rows to be displayed within the specified component of the
+picker view
+
+@param pickerView Picker View to determine which data source to use
+@param component Component to determine the rows
+@return Number of rows required
+*/
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     return _maximum - _minimum + 1;
 }
 
+
+/**---------------------------------------------------------------------------------------
+* @name pickerView viewForRow forComponent reusingView
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Gets an individual Picker View Row UIView object for the specified component
+
+@param pickerView Picker View to determine which data source to use
+@param row Index for the component row
+@param component Index for the data source column
+@param view Existing UIView object to recycle saving memory
+@return UIView for the target row
+*/
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
     UILabel *label = (UILabel *) view;
 
@@ -68,12 +111,33 @@
     return label;
 }
 
+/**---------------------------------------------------------------------------------------
+* @name pickerView didSelectRow forComponent inComponent
+*  ---------------------------------------------------------------------------------------
+*/
 
+/** PickerView Event to notify the  controller that a row selection was made within a given
+component index.
+
+@param pickerView Picker View to determine which data source to use
+@param row Recently selected row index
+@param component Data source column index the row belongs to
+*/
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     _selected = _minimum + row;
 }
 
 
+/**---------------------------------------------------------------------------------------
+* @name submitGuess
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Performs a submit action, determining if the users guess input is correct.  Triggering
+a segue to the relevant destination.
+
+@return IBAction
+*/
 - (IBAction)submitGuess {
     ASGameCore *core = [ASSingleGameCore sharedInstance];
     if ([[core gameMode] valueIsSecret:_selected]) {

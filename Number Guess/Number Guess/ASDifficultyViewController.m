@@ -104,9 +104,9 @@ Supporting a selection of predefined difficulties or a user defined range using 
 }
 
 /**---------------------------------------------------------------------------------------
-* @name numberOfComponentsInPickerView
-*  ---------------------------------------------------------------------------------------
-*/
+  * @name numberOfComponentsInPickerView
+  *  ---------------------------------------------------------------------------------------
+  */
 
 /** Gets the intended number of components to be displayed within the custom range picker
 

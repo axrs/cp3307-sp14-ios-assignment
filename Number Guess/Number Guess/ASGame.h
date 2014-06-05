@@ -106,4 +106,13 @@
 */
 - (void)addValueToCard:(int)value atIndex:(int)index;
 
+/**---------------------------------------------------------------------------------------
+* @name generateCards
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Generates and populates an array of cards with values from the known keys
+*/
+- (void)generateCards;
+
 @end

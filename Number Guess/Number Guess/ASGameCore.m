@@ -130,7 +130,7 @@
         valueToFind = i;
 
         for (int j = [[self keys] count] - 1; j >= 0; j--) {
-            currentKey = [[[self keys] objectAtIndex:j] intValue];
+            currentKey = [[[self keys] objectAtIndex:(NSUInteger) j] intValue];
 
             if (valueToFind >= currentKey) {
                 [self addValueToCard:i atIndex:j];
