@@ -60,17 +60,19 @@ static int viewCount;
     int index = [navigationControllers count] - 2;
     for (index; index > 0; index--) {
 
-        NSObject *controller = [navigationControllers objectAtIndex:index];
-        if ([self isKindOfClass:[controller class]]) {
-            [navigationControllers removeObjectAtIndex:index];
+        for (NSObject *controller in navigationControllers) {
+            if ([self isKindOfClass:[controller class]]) {
+                [navigationControllers removeObjectAtIndex:(NSUInteger) index];
+            }
         }
+
     }
     [self.navigationController setViewControllers:navigationControllers animated:NO];
 }
 
 - (void)setCardForView {
     ASGameCore *core = [ASSingleGameCore sharedInstance];
-    ASCard *card = [[core cards] objectAtIndex:viewCount];
+    ASCard *card = [[core cards] objectAtIndex:(NSUInteger) viewCount];
     BOOL showHint = [[core gameMode] showHintForCard:card];
 
     [[self cardView] setCard:card];

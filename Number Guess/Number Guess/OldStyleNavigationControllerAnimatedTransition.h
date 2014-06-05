@@ -7,7 +7,7 @@
 //  Dzamir/OldStyleNavigationControllerAnimatedTransition · GitHub. 2014.
 //  Dzamir/OldStyleNavigationControllerAnimatedTransition · GitHub. [ONLINE]
 //  Available at: https://github.com/Dzamir/OldStyleNavigationControllerAnimatedTransition.
-//  [Accessed 01 June 2014].
+//  [Accessed 26 May 2014].
 //
 //
 

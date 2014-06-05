@@ -10,8 +10,6 @@
 
 @interface ASDifficultyViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
-- (IBAction)unwindToDifficultySelection:(UIStoryboardSegue *)sender;
-
 - (IBAction)easyDifficultySelection:(UIView *)sender;
 
 - (IBAction)mediumDifficultySelection:(UIView *)sender;
