@@ -5,6 +5,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+* Executable Command Protocol for separating parcelable logic from controllers
+*/
 @protocol Command <NSObject>
 - (void)execute;
 @end

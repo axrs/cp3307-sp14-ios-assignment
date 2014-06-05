@@ -6,10 +6,22 @@
 #import "ASEasyGameDifficultyCommand.h"
 #import "ASSingleGameCore.h"
 
+/**
+* Easy Game Difficulty Configuration Command
+*/
 @implementation ASEasyGameDifficultyCommand {
 
 }
 
+/**---------------------------------------------------------------------------------------
+* @name execute
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Executes the command configuring the game difficulty to an easy difficulty (low range
+    of values)
+
+*/
 - (void)execute {
     ASGameCore *instance = [ASSingleGameCore sharedInstance];
     [instance setMinimumValue:1];

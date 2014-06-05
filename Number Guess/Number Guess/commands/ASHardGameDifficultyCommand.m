@@ -7,10 +7,22 @@
 
 #import "ASSingleGameCore.h"
 
+/**
+* Hard Game Difficulty Configuration Command
+*/
 @implementation ASHardGameDifficultyCommand {
 
 }
 
+/**---------------------------------------------------------------------------------------
+* @name execute
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Executes the command configuring the game difficulty to an hard difficulty (high range
+of values)
+
+*/
 - (void)execute {
     ASGameCore *instance = [ASSingleGameCore sharedInstance];
     [instance setMinimumValue:1];

@@ -7,12 +7,22 @@
 #import "ASSingleGameCore.h"
 #import "ASBinaryGameKeyGenerator.h"
 
+/**
+* Binary Game Key Configuration Command
+*/
 @implementation ASBinaryGameSequenceCommand {
 
 }
 
 
+/**---------------------------------------------------------------------------------------
+* @name execute
+*  ---------------------------------------------------------------------------------------
+*/
 
+/** Executes the command configuring the game to use the Binary Game Key Generator
+
+*/
 - (void)execute {
     ASGameCore *instance = [ASSingleGameCore sharedInstance];
     ASBinaryGameKeyGenerator *generator = [[ASBinaryGameKeyGenerator alloc] init];
