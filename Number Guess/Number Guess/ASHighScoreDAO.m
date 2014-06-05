@@ -25,11 +25,34 @@ static dispatch_once_t predicate;
 }
 
 - (NSArray *)all {
-    return nil;
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"HighScore"
+                                                         inManagedObjectContext:self.managedObjectContext];
+    [request setEntity:entityDescription];
+
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"score" ascending:NO];
+
+    NSArray *sortedScores = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+
+    [request setSortDescriptors:sortedScores];
+
+    NSError *error;
+
+    NSArray *records = [self.managedObjectContext executeFetchRequest:request error:&error];
+    return records;
 }
 
 - (void)createHighScoreFor:(NSString *)user WithScore:(long)score {
 
+    NSManagedObject *scoreEntry;
+
+    scoreEntry = [NSEntityDescription insertNewObjectForEntityForName:@"HighScore"
+                                               inManagedObjectContext:self.managedObjectContext];
+
+    [scoreEntry setValue:user forKey:@"name"];
+    [scoreEntry setValue:[NSNumber numberWithLong:score] forKey:@"score"];
+
+    [self saveContext];
 }
 
 
