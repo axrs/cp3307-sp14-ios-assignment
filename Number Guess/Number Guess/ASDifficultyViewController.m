@@ -11,14 +11,8 @@
 #import "ASMediumGameDifficultyCommand.h"
 #import "ASHardGameDifficultyCommand.h"
 #import "ASCustomGameDifficultyCommand.h"
+#import "ASTypeFaceFactory.h"
 
-#if !defined(MAX)
-      #define MAX(A,B)((A)>(B) ? (A) : (B));
-#endif
-
-#if !defined(MIN)
-      #define MAX(A,B)((A)>(B) ? (A) : (B));
-#endif
 
 @interface ASDifficultyViewController () {
     int _lowerRangeMax;
@@ -89,7 +83,7 @@
 
     if (label == nil) {
         label = [[UILabel alloc] init];
-        [label setFont:[UIFont fontWithName:@"CMFreshPaint" size:20]];
+        [label setFont:[ASTypeFaceFactory defaultTypeFace]];
         [label setTextColor:[UIColor whiteColor]];
         [label setShadowColor:[UIColor blackColor]];
         [label setShadowOffset:CGSizeMake(1, 1)];

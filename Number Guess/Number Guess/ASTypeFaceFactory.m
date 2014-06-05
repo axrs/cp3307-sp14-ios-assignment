@@ -13,7 +13,10 @@
 static UIFont *wetPaintFont;
 
 + (UIFont *)defaultTypeFace {
-    return nil;
+    if (wetPaintFont == nil) {
+        wetPaintFont = [UIFont fontWithName:@"CMFreshPaint" size:15.0f];
+    }
+    return wetPaintFont;
 }
 
 @end

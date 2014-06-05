@@ -8,6 +8,7 @@
 
 #import "ASUserGuessViewController.h"
 #import "ASSingleGameCore.h"
+#import "ASTypeFaceFactory.h"
 
 @interface ASUserGuessViewController () {
     int _selected;
@@ -52,7 +53,7 @@
 
     if (label == nil) {
         label = [[UILabel alloc] init];
-        [label setFont:[UIFont fontWithName:@"CMFreshPaint" size:20]];
+        [label setFont:[ASTypeFaceFactory defaultTypeFace]];
         [label setTextColor:[UIColor whiteColor]];
         [label setShadowColor:[UIColor blackColor]];
         [label setShadowOffset:CGSizeMake(1, 1)];
