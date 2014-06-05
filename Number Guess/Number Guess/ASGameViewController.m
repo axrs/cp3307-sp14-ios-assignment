@@ -75,13 +75,10 @@ return to an option controller.
     //The total number of controllers to parse = count - current view
     int index = [navigationControllers count] - 2;
     for (index; index > 0; index--) {
-
-        for (NSObject *controller in navigationControllers) {
-            if ([self isKindOfClass:[controller class]]) {
-                [navigationControllers removeObjectAtIndex:(NSUInteger) index];
-            }
+        NSObject *controller = [navigationControllers objectAtIndex:(NSUInteger) index];
+        if ([self isKindOfClass:[controller class]]) {
+            [navigationControllers removeObjectAtIndex:(NSUInteger) index];
         }
-
     }
     [self.navigationController setViewControllers:navigationControllers animated:NO];
 }
