@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C024F1D11932E35D0065FD33 /* cm_fresh_paint.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C024F1D01932E35D0065FD33 /* cm_fresh_paint.ttf */; };
+		C03A9A851940645400834100 /* ASHighScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03A9A841940645400834100 /* ASHighScoreViewController.m */; };
+		C03A9A88194067AD00834100 /* HighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = C03A9A87194067AD00834100 /* HighScore.m */; };
 		C09F3AFA1933081F009BBE1C /* corkboard_280_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3AF81933081F009BBE1C /* corkboard_280_50@2x.png */; };
 		C09F3AFB1933081F009BBE1C /* sand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3AF91933081F009BBE1C /* sand@2x.png */; };
 		C09F3AFE1933082A009BBE1C /* corkboard_280_50.png in Resources */ = {isa = PBXBuildFile; fileRef = C09F3AFC1933082A009BBE1C /* corkboard_280_50.png */; };
@@ -110,6 +112,10 @@
 
 /* Begin PBXFileReference section */
 		C024F1D01932E35D0065FD33 /* cm_fresh_paint.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cm_fresh_paint.ttf; sourceTree = "<group>"; };
+		C03A9A831940645400834100 /* ASHighScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHighScoreViewController.h; sourceTree = "<group>"; };
+		C03A9A841940645400834100 /* ASHighScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHighScoreViewController.m; sourceTree = "<group>"; };
+		C03A9A86194067AD00834100 /* HighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScore.h; sourceTree = "<group>"; };
+		C03A9A87194067AD00834100 /* HighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScore.m; sourceTree = "<group>"; };
 		C09F3AF81933081F009BBE1C /* corkboard_280_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corkboard_280_50@2x.png"; sourceTree = "<group>"; };
 		C09F3AF91933081F009BBE1C /* sand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sand@2x.png"; sourceTree = "<group>"; };
 		C09F3AFC1933082A009BBE1C /* corkboard_280_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corkboard_280_50.png; sourceTree = "<group>"; };
@@ -294,19 +300,21 @@
 			isa = PBXGroup;
 			children = (
 				C09F3B0019330997009BBE1C /* ASDifficultyViewController.h */,
-				C0D7916A193C118C00B756D1 /* ASUserGuessViewController.h */,
-				C0D7916B193C118C00B756D1 /* ASUserGuessViewController.m */,
 				C09F3B0119330997009BBE1C /* ASDifficultyViewController.m */,
 				C09F3B17193312CE009BBE1C /* ASGameViewController.h */,
 				C09F3B18193312CE009BBE1C /* ASGameViewController.m */,
+				C03A9A831940645400834100 /* ASHighScoreViewController.h */,
+				C03A9A841940645400834100 /* ASHighScoreViewController.m */,
 				D24FF21F3190031CD7090971 /* ASHomeViewController.h */,
 				D24FFE6DF52610733A52D1CA /* ASHomeViewController.m */,
 				C0A5554B193BECFE0002DE57 /* ASRootNavigationController.h */,
 				C0A5554C193BECFE0002DE57 /* ASRootNavigationController.m */,
-				C0A00D75194026010003A7D5 /* ASUserWinViewController.h */,
-				C0A00D76194026010003A7D5 /* ASUserWinViewController.m */,
+				C0D7916A193C118C00B756D1 /* ASUserGuessViewController.h */,
+				C0D7916B193C118C00B756D1 /* ASUserGuessViewController.m */,
 				C0A00D78194028930003A7D5 /* ASUserLostViewController.h */,
 				C0A00D79194028930003A7D5 /* ASUserLostViewController.m */,
+				C0A00D75194026010003A7D5 /* ASUserWinViewController.h */,
+				C0A00D76194026010003A7D5 /* ASUserWinViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -358,6 +366,8 @@
 				C0A1E991192D6EBA00B4384D /* Game.storyboard */,
 				C0A1E956192D6E4E00B4384D /* Images.xcassets */,
 				C0A1E953192D6E4E00B4384D /* Number_Guess.xcdatamodeld */,
+				C03A9A86194067AD00834100 /* HighScore.h */,
+				C03A9A87194067AD00834100 /* HighScore.m */,
 				D24FF0F33B1523C621F8E658 /* OldStyleNavigationControllerAnimatedTransition.h */,
 				D24FFD685DC033BF8F800137 /* OldStyleNavigationControllerAnimatedTransition.m */,
 				C0A1E948192D6E4D00B4384D /* Supporting Files */,
@@ -649,6 +659,7 @@
 			files = (
 				C0A1E955192D6E4E00B4384D /* Number_Guess.xcdatamodeld in Sources */,
 				C0A1E952192D6E4D00B4384D /* ASAppDelegate.m in Sources */,
+				C03A9A88194067AD00834100 /* HighScore.m in Sources */,
 				C0A1E94E192D6E4D00B4384D /* main.m in Sources */,
 				D24FF1F1AE0839B8FB95DDDB /* ASCard.m in Sources */,
 				D24FFFBCFA13A793D58FE473 /* ASBinaryGameKeyGenerator.m in Sources */,
@@ -667,6 +678,7 @@
 				C0A00D77194026010003A7D5 /* ASUserWinViewController.m in Sources */,
 				D24FF77CD53F9C9FBC96B7B6 /* ASHardGameDifficultyCommand.m in Sources */,
 				D24FFBCEC70CC79A706478DE /* ASCustomGameDifficultyCommand.m in Sources */,
+				C03A9A851940645400834100 /* ASHighScoreViewController.m in Sources */,
 				C09F3B0219330997009BBE1C /* ASDifficultyViewController.m in Sources */,
 				C09F3B19193312CE009BBE1C /* ASGameViewController.m in Sources */,
 				D24FF221C11C70DD8345F661 /* ASHomeViewController.m in Sources */,
