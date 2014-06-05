@@ -6,6 +6,10 @@
 #import "ASHighScoreDAO.h"
 
 
+/** High Score Data Access Object providing access to persistent storage and retrieval
+of high scores throughout the apps installed life
+
+*/
 @implementation ASHighScoreDAO {
 
 }

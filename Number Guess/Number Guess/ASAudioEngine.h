@@ -17,7 +17,7 @@
 
 + (void)startBackgroundAudio;
 
-+ (void)stopBackgroundAudio;
++ (void)pauseBackgroundAudio;
 
 + (void)playConfirmAudio;
 

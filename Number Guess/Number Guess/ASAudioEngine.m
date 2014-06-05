@@ -5,6 +5,9 @@
 
 #import "ASAudioEngine.h"
 
+/** Sound Effect and Background Audio controller
+
+*/
 @implementation ASAudioEngine {
     SystemSoundID _confirmId;
     SystemSoundID _transitionId;
@@ -16,6 +19,16 @@ static ASAudioEngine *_sharedInstance = nil;
 
 static dispatch_once_t predicate;
 
+
+/**---------------------------------------------------------------------------------------
+* @name sharedInstance
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Gets the current instance of the AudioEngine
+
+@return Shared AudioEngine instance
+*/
 + (id)sharedInstance {
     dispatch_once(&predicate, ^{
         _sharedInstance = [[ASAudioEngine alloc] init];
@@ -23,6 +36,17 @@ static dispatch_once_t predicate;
     return _sharedInstance;
 }
 
+
+/**---------------------------------------------------------------------------------------
+* @name init
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Initialises the AudioEngine instance, loading all known sound effects and lobby music
+in preparation to playing the sounds.
+
+@return Initialised AudioEngine object
+*/
 
 - (id)init {
     self = [super init];
@@ -47,6 +71,15 @@ static dispatch_once_t predicate;
 }
 
 
+/**---------------------------------------------------------------------------------------
+* @name backgroundPlayer
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Gets the current background AVAudioPlayer instance
+
+@return Background Audio Player instance
+*/
 - (AVAudioPlayer *)backgroundPlayer {
     if (_backgroundPlayer == nil) {
         NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"lobby" ofType:@"mp3"];
@@ -57,35 +90,100 @@ static dispatch_once_t predicate;
     return _backgroundPlayer;
 }
 
+/**---------------------------------------------------------------------------------------
+* @name startBackgroundAudio
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Starts and resumes the background audio player
+
+*/
 + (void)startBackgroundAudio {
     [[[ASAudioEngine sharedInstance] backgroundPlayer] play];
 }
 
-+ (void)stopBackgroundAudio {
+
+/**---------------------------------------------------------------------------------------
+* @name pauseBackgroundAudio
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Pauses the background audio player
+
+*/
++ (void)pauseBackgroundAudio {
     [[[ASAudioEngine sharedInstance] backgroundPlayer] pause];
 }
 
+
+/**---------------------------------------------------------------------------------------
+* @name playConfirmAudio
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Plays a action confirmed sound effect
+
+*/
 + (void)playConfirmAudio {
     [[ASAudioEngine sharedInstance] playConfirmAudio];
 }
 
+/**---------------------------------------------------------------------------------------
+* @name playBackAudio
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Plays a reverse/back action sound effect
+
+*/
 + (void)playBackAudio {
     [[ASAudioEngine sharedInstance] playBackAudio];
 }
 
+/**---------------------------------------------------------------------------------------
+* @name playTransitionAudio
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Plays a transition action sound effect
+
+*/
 + (void)playTransitionAudio {
     [[ASAudioEngine sharedInstance] playTransitionAudio];
 }
 
+/**---------------------------------------------------------------------------------------
+* @name playConfirmAudio
+*  ---------------------------------------------------------------------------------------
+*/
 
+/** Plays a action confirmed sound effect
+
+*/
 - (void)playConfirmAudio {
     AudioServicesPlaySystemSound(_confirmId);
 }
 
+/**---------------------------------------------------------------------------------------
+* @name playBackAudio
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Plays a reverse/back action sound effect
+
+*/
 - (void)playBackAudio {
     AudioServicesPlaySystemSound(_backId);
 }
 
+/**---------------------------------------------------------------------------------------
+* @name playTransitionAudio
+*  ---------------------------------------------------------------------------------------
+*/
+
+/** Plays a transition action sound effect
+
+*/
 - (void)playTransitionAudio {
     AudioServicesPlaySystemSound(_transitionId);
 }
