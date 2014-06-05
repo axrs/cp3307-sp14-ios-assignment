@@ -32,7 +32,6 @@
 
 - (void)viewDidLoad {
     ASGameCore *core = [ASSingleGameCore sharedInstance];
-
     _minimum = [core minimumValue];
     _maximum = [core maximumValue];
 }
@@ -71,6 +70,16 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     _selected = _minimum + row;
+}
+
+
+- (IBAction)submitGuess {
+    ASGameCore *core = [ASSingleGameCore sharedInstance];
+    if ([[core gameMode] valueIsSecret:_selected]) {
+        [self performSegueWithIdentifier:@"UserWinSegue" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"UserLostSegue" sender:self];
+    }
 }
 
 

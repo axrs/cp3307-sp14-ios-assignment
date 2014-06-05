@@ -321,6 +321,7 @@
                                 </state>
                                 <connections>
                                     <action selector="customDifficultySelection:" destination="Bd8-ym-Kvd" eventType="touchUpInside" id="T8M-6V-SuP"/>
+                                    <action selector="submitGuess" destination="r5p-xe-0VP" eventType="touchUpInside" id="Wv4-IE-9F0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -349,10 +350,10 @@
             </objects>
             <point key="canvasLocation" x="1560" y="520"/>
         </scene>
-        <!--View Controller-->
+        <!--User Lost View Controller-->
         <scene sceneID="UJr-tG-g7w">
             <objects>
-                <viewController id="yS0-JH-Gbz" sceneMemberID="viewController">
+                <viewController id="yS0-JH-Gbz" customClass="ASUserLostViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vbc-lh-3Xh"/>
                         <viewControllerLayoutGuide type="bottom" id="ccy-Kd-z5N"/>
@@ -388,6 +389,7 @@
                                 </state>
                                 <connections>
                                     <action selector="dismissToRoot" destination="r5p-xe-0VP" eventType="touchUpInside" id="JAS-Pj-dd0"/>
+                                    <action selector="dismissToRoot" destination="yS0-JH-Gbz" eventType="touchUpInside" id="ROK-93-3FU"/>
                                 </connections>
                             </button>
                         </subviews>
